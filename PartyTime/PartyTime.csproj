@@ -94,9 +94,17 @@
     <Content Include="js\jquery.validate.js" />
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
+    <Content Include="logIn.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="logIn.aspx.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logIn.aspx.designer.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
