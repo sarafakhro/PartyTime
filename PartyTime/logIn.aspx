@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <title>Party Time-Log 8in</title>
+     <title>Party Time-Login</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
@@ -64,13 +64,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="contacttitlepage">
-                        <h2>Log in:</h2>
+                        <h2>Login:</h2>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12"> 
                       <div class="contacttitlepage">
                        <button class="send buttons"><a href="index.aspx">Home Page</a></button>
                     </div>
@@ -84,7 +84,7 @@
         <div class="row">
             <div class=" col-md-6 offset-md-3">
                 <div class="address">
-                       <h2>Please enter your username and password to log in!</h2>
+                       <h2>Please enter your username and password to login!</h2>
                     <form>
                         <div class="row">
                             <div class="col-sm-12">
@@ -97,7 +97,7 @@
                                  <button class="send"><a href="ForgotPassword.aspx">Forgot password?</a></button>
                             </div>
                             <div class="col-sm-12">
-                                <button class="send">Log in</button>
+                                <button class="send">Login</button>
                             </div>
                             
                         </div>
