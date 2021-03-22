@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+
+    <Content Include="aboutUs.aspx" />
+    <Content Include="contactUs.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\jquery-ui.css" />
@@ -78,14 +81,17 @@
     <Content Include="css\responsive.css" />
     <Content Include="css\slick.css" />
     <Content Include="css\style.css" />
+    <Content Include="forgotPassword.aspx" />
     <Content Include="icon\1.png" />
     <Content Include="icon\2.png" />
     <Content Include="icon\3.png" />
     <Content Include="icon\icon4.png" />
     <Content Include="images\album1.jpg" />
     <Content Include="images\album2.jpg" />
+    <Content Include="images\banner2.jpg" />
     <Content Include="images\loading.gif" />
     <Content Include="images\search.png" />
+    <Content Include="index.aspx" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\custom.js" />
     <Content Include="js\jquery-3.0.0.min.js" />
@@ -95,9 +101,48 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="signUp.aspx" />
+    <Content Include="logIn.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="aboutUs.aspx.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutUs.aspx.designer.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPassword.aspx.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotPassword.aspx.designer.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+</Compile>
+
+    <Compile Include="logIn.aspx.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logIn.aspx.designer.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
+  </Compile>
+  <Compile Include="contactUs.aspx.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+	  <Compile Include="contactUs.aspx.designer.cs">
+		  <DependentUpon>contactUs.aspx</DependentUpon>
+	  </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+     
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="signUp.aspx.cs">
       <DependentUpon>signUp.aspx</DependentUpon>
