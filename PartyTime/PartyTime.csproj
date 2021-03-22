@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+
+    <Content Include="aboutUs.aspx" />
     <Content Include="contactUs.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -79,6 +81,7 @@
     <Content Include="css\responsive.css" />
     <Content Include="css\slick.css" />
     <Content Include="css\style.css" />
+    <Content Include="forgotPassword.aspx" />
     <Content Include="icon\1.png" />
     <Content Include="icon\2.png" />
     <Content Include="icon\3.png" />
@@ -102,6 +105,21 @@
   </ItemGroup>
   <ItemGroup>
 
+    <Compile Include="aboutUs.aspx.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutUs.aspx.designer.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPassword.aspx.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotPassword.aspx.designer.cs">
+      <DependentUpon>forgotPassword.aspx</DependentUpon>
+</Compile>
+
     <Compile Include="logIn.aspx.cs">
       <DependentUpon>logIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -122,7 +140,7 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-      
+     
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
