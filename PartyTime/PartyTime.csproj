@@ -104,8 +104,9 @@
       <DependentUpon>contactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="contactUs.aspx.designer.cs">
-      <DependentUpon>contactUs.aspx</DependentUpon>
+	  <Compile Include="contactUs.aspx.designer.cs">
+		  <DependentUpon>contactUs.aspx</DependentUpon>
+	  </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
