@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contactUs.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\jquery-ui.css" />
@@ -84,8 +85,10 @@
     <Content Include="icon\icon4.png" />
     <Content Include="images\album1.jpg" />
     <Content Include="images\album2.jpg" />
+    <Content Include="images\banner2.jpg" />
     <Content Include="images\loading.gif" />
     <Content Include="images\search.png" />
+    <Content Include="index.aspx" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\custom.js" />
     <Content Include="js\jquery-3.0.0.min.js" />
@@ -98,12 +101,28 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="logIn.aspx.cs">
       <DependentUpon>logIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="logIn.aspx.designer.cs">
       <DependentUpon>logIn.aspx</DependentUpon>
+  </Compile>
+  <Compile Include="contactUs.aspx.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+	  <Compile Include="contactUs.aspx.designer.cs">
+		  <DependentUpon>contactUs.aspx</DependentUpon>
+	  </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
