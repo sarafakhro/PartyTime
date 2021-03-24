@@ -1,20 +1,17 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signUp.aspx.cs" Inherits="PartyTime.signUp" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<%-- Created by: Sarkis Baghdasarian --%>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
     <title>Party Time-Skapa konto</title>
-  
-   <!-- basic -->
+    <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-   
-    
-    <!-- bootstrap css -->
+      <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
@@ -45,69 +42,55 @@
    transform: translateY(50%);
 }
     </style>
-
-
-
-</head>
-    
-<body>
-
-
-
-
-
-    <form id="form1" runat="server">
-         
-           <!-- Start Signup  Title-->
+   </head>
+ <body>
+      <form id="form1" runat="server">
+            <!-- Start Signup  Title-->
          <div class="contactbg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="contacttitlepage">
-                        <h2>Skapa ett konto:</h2>
+                        <h2>Create an account:</h2>
                     </div>
                 </div>
             </div>
-
-             <div class="row">
+              <div class="row">
                 <div class="col-md-12">
                       <div class="contacttitlepage">
-                         <button class="send buttons"><a href="index.aspx">Startsidan</a></button>
+                         <button class="send buttons"><a href="index.aspx">Home Page</a></button>
                     </div>
                 </div>
             </div>
-
-            </div>
+             </div>
              </div>
          <!-- End Signup  Title-->
+
             <!-- Start Signup form-->
             <div class="container">
         <div class="row">
             <div class=" col-md-6 offset-md-3">
                 <div class="address">
-                     <h2>Var vänligt och ange ett användarnamn och lösenord samt en e-post för att skapa ett konto!</h2>
-                    
-                     <form>
+                      <h2>Please enter a username, password and an email to create an account!</h2>
+                      <form>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input class="contactus" placeholder="Användarnamn" type="text" name="username">
+                                <input class="contactus" placeholder="Username" type="text" name="username">
+                            </div>
+                             <div class="col-sm-12">
+                                <input class="contactus" placeholder="Password" type="password" name="pass">
                             </div>
                              <div class="col-sm-12">
                                 <input class="contactus" placeholder="E-post" type="email" name="email">
                             </div>
-                            <div class="col-sm-12">
-                                <input class="contactus" placeholder="Lösenord" type="password" name="pass">
-                            </div>
                            
                             <div class="col-sm-12">
-                                  <button class="send"><a href="LogIn.aspx">Har du redan ett konto? Logga in!</a></button>
-                                 
-                             </div>
+                                  <button class="send"><a href="LogIn.aspx">You alredy have an account? Login!</a></button>
+                              </div>
                             <div class="col-sm-12">
-                                <button class="send">Skapa kontot</button>
+                                <button class="send">Create an account</button>
                             </div>
-                            
-                        </div>
+                         </div>
                     </form>
                 </div>
             </div>

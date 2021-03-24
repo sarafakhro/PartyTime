@@ -1,12 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="aboutUs.aspx.cs" Inherits="PartyTime.aboutUs" %>
 
+ <%-- Created by: Sara Bakdach Fakhro --%>
 <!DOCTYPE html>
-
-
-  
-
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+ <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
         <!-- basic -->
     <meta charset="utf-8">
@@ -44,7 +40,8 @@
                 <img src="images/loading.gif" alt="#" /></div>
         </div>
         <!-- end loader -->
-            <!-- header -->
+
+            <!-- Start header -->
     <header>
         <!-- header inner -->
         <div class="header">
@@ -76,8 +73,9 @@
                     </div>
                   </div>
             </div>
+            </div>
             <!-- end header inner -->
-    </header>
+     </header>
     <!-- end header -->
         
            <!-- Start About Title-->
@@ -93,8 +91,8 @@
         </div>
      </div>
          <!-- End About Title-->
+           <br />
 
-          <br />
         <!-- Start content-->
         <div class="container">
             <div class="row">
@@ -104,8 +102,7 @@
                             <span>
                                 Vi är fem passionerade studenter som ger dig den bästa planeringsverktyg för dig som vill planera en fest eller evangemang.
                              </span>
-                
-                    </div>
+                     </div>
                     <div class="titlepage">
                         <h2>Vad är vårt mål?</h2>
                             <span>Vårt mål är att leverera det bästa upplevelse till<br>
@@ -122,28 +119,21 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 width">
                             <div class="address">
-                                ´                           
-                                <ul class="locarion_icon">
+                                 <ul class="locarion_icon">
                                     <li>
                                         <img src="icon/1.png" alt="icon" />Malmö</li>
                                     <li>
-                                        <img src="icon/2.png" alt="icon" />Telefonnummer : ( +46 768307878 )</li>
+                                        <img src="icon/2.png" alt="icon" />Phonenumber : ( +46 768307878 )</li>
                                     <li>
-                                        <img src="icon/3.png" alt="icon" />Email : demo@email.com</li>
-
+                                        <img src="icon/3.png" alt="icon" />Email : partytimemau21@gmail.com</li>
                                 </ul>
-
-                             
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-6 col-md-6 col-sm-6 ">
-                            <div class="address">
-                                <h3>Party Time</h3>
                              </div>
                         </div>
-                        
+                          <div class="col-lg-6 col-md-6 col-sm-6 ">
+                            <div class="address">
+                                <h3>Party Time</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="copyright">
@@ -152,33 +142,17 @@
             </div>
         </footer>
         <!-- end footer -->
-          <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
-            });
 
-            $(".zoom").hover(function () {
+         
+    
+        <!-- Javascript files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/custom.js"></script>
 
-                $(this).addClass('transition');
-            }, function () {
+    <%-- Make the navbar resizble --%>
+        <script src="js/plugin.js"></script>
 
-                $(this).removeClass('transition');
-            });
-        });
-    </script>
-     </form>
+      </form>
 </body>
 </html>
 
