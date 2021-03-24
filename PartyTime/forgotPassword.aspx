@@ -52,14 +52,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="contacttitlepage">
-                        <h2>Glömt lösenord:</h2>
+                        <h2>Forgot Password:</h2>
                     </div>
                 </div>
             </div>
              <div class="row">
                 <div class="col-md-12">
                       <div class="contacttitlepage">
-                         <button class="send buttons"><a href="index.aspx">Startsidan</a></button>
+                         <button class="send buttons"><a href="index.aspx">Home</a></button>
                     </div>
                   </div>
             </div>
@@ -72,17 +72,17 @@
         <div class="row">
             <div class=" col-md-6 offset-md-3">
                 <div class="address">
-                     <h2>Var vänlig och ange ditt användarnamn för att ta reda på ditt lösenord!</h2>
-                    <form>
+                    <h2>Please enter your username to get your password!</h2>
+                     <form>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input class="contactus" placeholder="Användarnamn" type="text" name="username">
+                                <input class="contactus" placeholder="Username" type="text" name="username">
                             </div>
                             <div class="col-sm-12">
                                 <asp:Label ID="password_lbl" runat="server" Text="Lösenordet ska stå här, från databasen!"></asp:Label>
                             </div>
                              <div class="col-sm-12">
-                                <button class="send">Hämta lösenordet</button>
+                                <button class="send">Get password</button>
                             </div>
                          </div>
                     </form>
