@@ -1,13 +1,11 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="PartyTime.index" %>
 
+ <%-- Created by: Mohanad Oweidat --%>
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    
-    <title>Party Time-Home</title>
-
-     <!-- basic -->
+ <html xmlns="http://www.w3.org/1999/xhtml">
+   <head runat="server">
+     <title>Party Time-Home</title>
+      <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
@@ -38,7 +36,7 @@
     </div>
     <!-- end loader -->
 
-          <!-- header -->
+          <!-- Start header -->
     <header>
         <!-- header inner -->
         <div class="header">
@@ -79,11 +77,12 @@
             <div class="banner-main">
                 <img src="images/banner2.jpg" />
                 <div class="container">
-
-                    <div class="text-bg relative">
+                     <div class="text-bg relative">
                         <h1>Party Time<br>
-                            <span class="Perfect">Det perfekta verktyget för planering</span><br>
-                            Välkommen!</h1>
+                            <span class="Perfect">Det perfekta verktyget för planering</span>
+                            <br>
+                            Välkommen!
+                         </h1>
                         <p>
                             Vi leverar dig en enekl samt en smidig lösning 
                         <br>
@@ -107,9 +106,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-
+                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
@@ -123,9 +120,6 @@
                             </figure>
                         </div>
                     </div>
-
-
-
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
@@ -139,41 +133,37 @@
                             </figure>
                         </div>
                     </div>
-
-
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
-                                <a href="images/album1.jpg" class="fancybox" rel="ligthbox">
-                                    <img src="images/album1.jpg" class="zoom img-fluid " alt="">
+                                <a href="images/album1.jpg">
+                                    <img src="images/album1.jpg">
                                 </a>
                                 <span class="hoverle">
-                                    <a href="images/album1.jpg" class="fancybox" rel="ligthbox">
+                                    <a href="images/album1.jpg">
                                         <img src="images/search.png"></a>
                                 </span>
                             </figure>
                         </div>
                     </div>
-
-
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
-                                <a href="images/album2.jpg" class="fancybox" rel="ligthbox ">
-                                    <img src="images/album2.jpg" class="zoom img-fluid " alt="">
+                                <a href="images/album2.jpg">
+                                    <img src="images/album2.jpg">
                                 </a>
                                 <span class="hoverle">
-                                    <a href="images/album2.jpg" class="fancybox" rel="ligthbox">
+                                    <a href="images/album2.jpg">
                                         <img src="images/search.png"></a>
                                 </span>
                             </figure>
                         </div>
                     </div>
-
-                </div>
+                 </div>
             </div>
         </div>
         <!-- end Albums -->
+
         <!--  footer -->
         <footer id="footer_with_contact">
             <div class="footer">
@@ -181,20 +171,17 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 width">
                             <div class="address">
-                                                      
-                                <ul class="locarion_icon">
+                                 <ul class="locarion_icon">
                                     <li>
                                         <img src="icon/1.png" alt="icon" />Malmö</li>
                                     <li>
-                                        <img src="icon/2.png" alt="icon" />Phonenu,ber : ( +46 768307878 )</li>
+                                        <img src="icon/2.png" alt="icon" />Phonenumber : ( +46 768307878 )</li>
                                     <li>
-                                        <img src="icon/3.png" alt="icon" />Email : demo@email.com</li>
+                                        <img src="icon/3.png" alt="icon" />Email : partytimemau21@gmail.com</li>
                                 </ul>
                              </div>
                         </div>
-
-
-                        <div class="col-lg-6 col-md-6 col-sm-6 ">
+                          <div class="col-lg-6 col-md-6 col-sm-6 ">
                             <div class="address">
                                 <h3>Party Time</h3>
                             </div>
@@ -208,32 +195,16 @@
         </footer>
         <!-- end footer -->
         
+
          <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
-            });
+        <!-- Javascript files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/custom.js"></script>
 
-            $(".zoom").hover(function() {
-
-                $(this).addClass('transition');
-            }, function() {
-
-                $(this).removeClass('transition');
-            });
-        });
-    </script>
-    </form>
+     
+      <%-- Make the navbar resizble --%>
+        <script src="js/plugin.js"></script>
+   
+      </form>
 </body>
 </html>

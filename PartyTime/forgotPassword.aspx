@@ -1,8 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="forgotPassword.aspx.cs" Inherits="PartyTime.forgotPassword" %>
 
+<%-- Created by: Sara Bakdach Fakhro --%>
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+ <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- basic -->
     <meta charset="utf-8">
@@ -12,10 +12,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
     <title>Party Time-Forgot password</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- bootstrap css -->
+     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
@@ -45,7 +42,7 @@
   left:0;
    transform: translateY(50%);
 }
-        </style>
+     </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -59,26 +56,23 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row">
+             <div class="row">
                 <div class="col-md-12">
                       <div class="contacttitlepage">
                          <button class="send buttons"><a href="index.aspx">Startsidan</a></button>
                     </div>
-                        
-                     
-                </div>
+                  </div>
             </div>
         </div>
              </div>
           <!-- End Forgotpassword Title-->
+
          <!-- Start Forgotpassword form-->
             <div class="container">
         <div class="row">
             <div class=" col-md-6 offset-md-3">
                 <div class="address">
-
-                    <h2>Var vänlig och ange ditt användarnamn för att ta reda på ditt lösenord!</h2>
+                     <h2>Var vänlig och ange ditt användarnamn för att ta reda på ditt lösenord!</h2>
                     <form>
                         <div class="row">
                             <div class="col-sm-12">

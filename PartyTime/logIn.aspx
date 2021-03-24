@@ -1,8 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logIn.aspx.cs" Inherits="PartyTime.logIn" %>
 
+<%-- Created by: Justine Jensen  --%>
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+ <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
      <title>Party Time-Login</title>
     <meta charset="utf-8">
@@ -10,8 +10,7 @@
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <!-- bootstrap css -->
+     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
@@ -42,19 +41,7 @@
    transform: translateY(50%);
 }
     </style>
-   <%-- <title>login</title>
-    <link rel ="stylesheet"href="Style1.css" />--%>
-
-    <!-- -->
-    <%--<style>
-        h1{
-            color:blue;
-        }
-
-    </style>--%>
-
-
-</head>
+   </head>
 
 <body>
     <form id="form1" runat="server">
@@ -68,15 +55,12 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row">
+             <div class="row">
                 <div class="col-md-12"> 
                       <div class="contacttitlepage">
                        <button class="send buttons"><a href="index.aspx">Home Page</a></button>
                     </div>
-                        
-                     
-                </div>
+                  </div>
             </div>
         </div>
              </div>
@@ -99,8 +83,7 @@
                             <div class="col-sm-12">
                                 <button class="send">Login</button>
                             </div>
-                            
-                        </div>
+                         </div>
                     </form>
                 </div>
             </div>
