@@ -59,7 +59,7 @@
              <div class="row">
                 <div class="col-md-12">
                       <div class="contacttitlepage">
-                         <button class="send buttons"><a href="index.aspx">Home</a></button>
+                         <button class="send buttons"><a href="index.aspx">Home Page</a></button>
                     </div>
                   </div>
             </div>
