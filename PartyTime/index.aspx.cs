@@ -11,7 +11,36 @@ namespace PartyTime
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            logInBtn.ServerClick += logInBtn_ServerClick;
+            signUpBtn.ServerClick += signUpBtn_ServerClick;
+            logOutBtn.ServerClick += logOutBtn_ServerClick;
+            dashBtn.ServerClick += dashBtn_ServerClick;
+            planBtn.ServerClick += planBtn_ServerClick;
+        }
 
+        private void planBtn_ServerClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void dashBtn_ServerClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void logOutBtn_ServerClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void signUpBtn_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("signUp.aspx");
+        }
+
+        private void logInBtn_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("logIn.aspx");
         }
     }
 }
