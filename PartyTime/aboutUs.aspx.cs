@@ -28,7 +28,7 @@ namespace PartyTime
             //annars tvärtom
             else
             {
-                dashBtn.Style.Add("display", "block");
+                dashBtn.Style.Add("display", "none");
                 logOutBtn.Style.Add("display", "none");
 
                 logInBtn.Visible = true;
