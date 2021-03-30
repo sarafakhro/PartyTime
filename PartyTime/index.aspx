@@ -27,6 +27,26 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+       <style>
+           .btnDesign{
+               color:#808080;
+               background-color:black;
+               font-size:x-large;
+                
+               padding:10px;
+               text-shadow:2px 2px 10px #FF0000;
+           }
+           .btnDesign:hover{
+               color:white;
+           }
+
+
+           .hideBtn{
+               display:none;
+           }
+       </style>
+
 </head>
 <body class="main-layout">
     <form id="form1" runat="server">
@@ -57,10 +77,25 @@
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li class="active"> <a href="index.aspx">Home</a> </li>
-                                        <li> <a href="aboutUs.aspx">About us</a> </li>
-                                          <li> <a href="contactUs.aspx">Contact us</a> </li>
-                                        <li> <a href="logIn.aspx">Log in</a> </li>
-                                         <li> <a href="signUp.aspx">Sign up</a> </li>
+                                        <li><a href="aboutUs.aspx">About us</a> </li>
+                                          <li><a href="contactUs.aspx">Contact us</a> </li>
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        <li> 
+                                            <center><button class="btnDesign" runat="server" id="logInBtn">LOG IN</button></center>
+                                            <center><button runat="server" id="dashBtn" class="btnDesign hideBtn">PANEL</button></center>
+                                        </li>
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                         <li> 
+                                             <center><button runat="server" id="signUpBtn" class="btnDesign">SIGN UP</button></center>
+                                             <center><button runat="server" id="logOutBtn" class="btnDesign hideBtn">LOG OUT</button></center>
+                                         </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -88,7 +123,7 @@
                         <br>
                             för att lösa din evenemangs planering.
                         </p>
-                        <a href="#">Börja planera</a>
+                          <button runat="server" id="planBtn"><a>Start planning</a></button>
                     </div>
                 </div>
             </div>
