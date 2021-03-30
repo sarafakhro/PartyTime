@@ -4,7 +4,7 @@
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head runat="server">
-    <title>Party Time-Skapa konto</title>
+    <title>Party Time-Sign up</title>
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
