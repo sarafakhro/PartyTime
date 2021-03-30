@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-
     <Content Include="aboutUs.aspx" />
     <Content Include="contactUs.aspx" />
     <Content Include="css\animate.min.css" />
@@ -105,7 +104,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="aboutUs.aspx.cs">
       <DependentUpon>aboutUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -113,35 +111,34 @@
     <Compile Include="aboutUs.aspx.designer.cs">
       <DependentUpon>aboutUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Database\connectionString.cs" />
     <Compile Include="forgotPassword.aspx.cs">
       <DependentUpon>forgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="forgotPassword.aspx.designer.cs">
       <DependentUpon>forgotPassword.aspx</DependentUpon>
-</Compile>
-
+    </Compile>
     <Compile Include="logIn.aspx.cs">
       <DependentUpon>logIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="logIn.aspx.designer.cs">
       <DependentUpon>logIn.aspx</DependentUpon>
-  </Compile>
-  <Compile Include="contactUs.aspx.cs">
+    </Compile>
+    <Compile Include="contactUs.aspx.cs">
       <DependentUpon>contactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-	  <Compile Include="contactUs.aspx.designer.cs">
-		  <DependentUpon>contactUs.aspx</DependentUpon>
-	  </Compile>
+    <Compile Include="contactUs.aspx.designer.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-     
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="signUp.aspx.cs">
