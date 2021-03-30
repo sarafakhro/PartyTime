@@ -31,6 +31,24 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <style>
+        .btnDesign{
+            color:#808080;
+            background-color:black;
+            font-size:x-large;
+            padding:10px;
+            text-shadow:2px 2px 10px #FF0000;
+
+        }
+        .btnDesign:hover{
+            color:white;
+        }
+
+        .hideBtn{
+            display:none;
+        }
+
+    </style>
 </head>
 <body class="main-layout about-page">
     <form id="form1" runat="server">
@@ -64,8 +82,24 @@
                                         <li> <a href="index.aspx">HOME</a> </li>
                                         <li class="active"> <a href="aboutUs.aspx">ABOUT US</a> </li>
                                           <li> <a href="contactUs.aspx">CONTACT US</a> </li>
-                                         <li> <a href="logIn.aspx">LOG IN</a> </li>
-                                         <li> <a href="signUp.aspx">SIGN UP</a> </li>
+                                      <%--  mellanslag vertikalt--%>
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                        <li>
+                                        <center><button class = "btnDesign" runat = "server" id = "logInBtn">LOG IN</button></center>
+                                            <center><button runat = "server" id = "dashBtn" class ="btnDesign hideBtn">PANEL</button></center>
+                                            </li>
+                                        &nbsp
+                                        &nbsp
+                                        &nbsp
+                                            <li> 
+                                             <center><button runat = "server" id = "signUpBtn" class = "btnDesign">SIGN UP</button></center>
+                                             <center><button runat = "server" id = "logOutBtn" class = "btnDesign hideBtn" >LOG OUT</button></center>
+                                             </li>
                                     </ul>
                                 </nav>
                             </div>
