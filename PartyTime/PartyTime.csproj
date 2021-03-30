@@ -112,6 +112,7 @@
     <Compile Include="aboutUs.aspx.designer.cs">
       <DependentUpon>aboutUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Database\connectionString.cs" />
     <Compile Include="forgotPassword.aspx.cs">
       <DependentUpon>forgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
