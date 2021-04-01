@@ -72,16 +72,16 @@
                     <form>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input class="contactus" placeholder="Username" type="text" name="username">
+                                <input runat ="server" id="email" class="contactus" placeholder="Username" type="text" name="username">
                             </div>
                             <div class="col-sm-12">
-                                <input class="contactus" placeholder="Password" type="password" name="pass">
+                                <input runat="server" id="pass" class="contactus" placeholder="Password" type="password" name="pass">
                             </div>
                             <div class="col-sm-12">
                                  <button class="send"><a href="ForgotPassword.aspx">Forgot password?</a></button>
                             </div>
                             <div class="col-sm-12">
-                                <button class="send">Login</button>
+                                <button runat ="server" id="logInBtm" class="send">Login</button>
                             </div>
                          </div>
                     </form>
