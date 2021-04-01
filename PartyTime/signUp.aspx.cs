@@ -66,7 +66,7 @@ namespace PartyTime
                     SqlCommand cmd1 = new SqlCommand(procedureName,sqlConnection1);
                     cmd1.CommandType = System.Data.CommandType.StoredProcedure;
                     cmd1.Parameters.AddWithValue("@username", userName.Value.ToString());
-                    cmd1.Parameters.AddWithValue("@password", pass.Value.ToString());
+                    cmd1.Parameters.AddWithValue("@password",pass.Value.ToString());
                     cmd1.Parameters.AddWithValue("@Email", email.Value.ToString());
                     cmd1.Parameters.AddWithValue("@userTyp","U");
                     cmd1.ExecuteNonQuery();
