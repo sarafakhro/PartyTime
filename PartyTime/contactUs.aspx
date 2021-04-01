@@ -74,6 +74,9 @@
                         <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10">
                             <div class="menu-area">
                                 <div class="limit-box">
+                                     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                     <ContentTemplate>
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
                                             <li><a href="index.aspx">Start menu</a></li>
@@ -95,15 +98,14 @@
                                              <li> 
                                                  <center><button runat="server" id ="signUpBtn" class="btnDesign" >SIGN UP</button></center>
                                                 <center><button runat="server" id="logOutBtn" class="btnDesign hideBtn">LOG OUT</button></center>
-                                               
-
                                              </li>
                                         </ul>
                                     </nav>
+                                    </ContentTemplate>
+                                    </asp:UpdatePanel>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
