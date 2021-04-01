@@ -101,7 +101,6 @@
     <Content Include="js\popper.min.js" />
     <Content Include="signUp.aspx" />
     <Content Include="logIn.aspx" />
-    <Content Include="stock.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -148,13 +147,6 @@
     </Compile>
     <Compile Include="signUp.aspx.designer.cs">
       <DependentUpon>signUp.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="stock.aspx.cs">
-      <DependentUpon>stock.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="stock.aspx.designer.cs">
-      <DependentUpon>stock.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
