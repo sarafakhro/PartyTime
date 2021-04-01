@@ -8,6 +8,6 @@ namespace PartyTime.Database
 {
     public class connectionString
     {
-        public static string con = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+        public static string con = ConfigurationManager.ConnectionStrings["CONNECTION_STRING_NAME"].ConnectionString;
     }
 }
