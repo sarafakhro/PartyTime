@@ -74,9 +74,13 @@
                             </div>
                         </div>
                     </div>
+                    <%--updatepanel finns i asp. all kod som finns här kommer inte att laddas om--%>
                     <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10">
                         <div class="menu-area">
                             <div class="limit-box">
+                                 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li> <a href="index.aspx">HOME</a> </li>
@@ -102,6 +106,8 @@
                                              </li>
                                     </ul>
                                 </nav>
+                                </ContentTemplate>
+                                </asp:UpdatePanel>
                             </div>
                         </div>
                     </div>
