@@ -75,20 +75,20 @@
                       <form>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input class="contactus" placeholder="Username" type="text" name="username">
+                                <input runat="server" id="userName" class="contactus" placeholder="Username" type="text" name="username">
                             </div>
                              <div class="col-sm-12">
-                                <input class="contactus" placeholder="Password" type="password" name="pass">
+                                <input runat="server" id="pass" class="contactus" placeholder="Password" type="password" name="pass">
                             </div>
                              <div class="col-sm-12">
-                                <input class="contactus" placeholder="E-post" type="email" name="email">
+                                <input runat="server" id="email" class="contactus" placeholder="E-post" type="email" name="email">
                             </div>
                            
                             <div class="col-sm-12">
                                   <button class="send"><a href="LogIn.aspx">You alredy have an account? Login!</a></button>
                               </div>
                             <div class="col-sm-12">
-                                <button class="send">Create an account</button>
+                                <button runat="server" id="signUpBtm" class="send">Create an account</button>
                             </div>
                          </div>
                     </form>
