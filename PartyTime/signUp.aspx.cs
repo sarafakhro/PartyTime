@@ -28,11 +28,11 @@ namespace PartyTime
             }
             else
             {
-                SqlConnection sqlConnection = new SqlConnection(Database.connectionString.con);
-                sqlConnection.Open();
+                SqlConnection con = new SqlConnection(Database.connectionString.con);
+                con.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = "select * from [Users] ";
-                cmd.Connection = sqlConnection;
+                cmd.Connection = con;
                 SqlDataReader sqlReader = cmd.ExecuteReader();
                 while (sqlReader.Read())
                 {
@@ -68,7 +68,7 @@ namespace PartyTime
                     cmd1.Parameters.AddWithValue("@username", userName.Value.ToString());
                     cmd1.Parameters.AddWithValue("@password",pass.Value.ToString());
                     cmd1.Parameters.AddWithValue("@Email", email.Value.ToString());
-                    cmd1.Parameters.AddWithValue("@userTyp","U");
+                    cmd1.Parameters.AddWithValue("@userType","U");
                     cmd1.ExecuteNonQuery();
                     sqlConnection1.Close();
                     Session["user"] = userName.Value.ToString();
