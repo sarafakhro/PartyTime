@@ -72,17 +72,20 @@
         <div class="row">
             <div class=" col-md-6 offset-md-3">
                 <div class="address">
-                    <h2>Please enter your username to get your password!</h2>
+                    <h2>Please enter your e-mail to get your password!</h2>
                      <form>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input class="contactus" placeholder="Username" type="text" name="username">
+                                <%--placeholder det som visas för användare--%>
+                                <input class="contactus" placeholder="email" type="text" name="email" runat ="server" id ="email">
                             </div>
                             <div class="col-sm-12">
-                                <asp:Label ID="password_lbl" runat="server" Text="Lösenordet ska stå här, från databasen!"></asp:Label>
+                                <%--runat så att den blir körbar med c#--%>
+                                <asp:Label ID="passwordLabel" runat="server"></asp:Label>
                             </div>
                              <div class="col-sm-12">
-                                <button class="send">Get password</button>
+                                <button class="send" runat ="server" id ="getBtn">Get password</button>
+                                <button class="send" runat ="server" id ="logInBtn" visible ="false"> <a href = "logIn.aspx">Get password</a></button>
                             </div>
                          </div>
                     </form>
