@@ -68,11 +68,11 @@
         <div class="row">
             <div class=" col-md-6 offset-md-3">
                 <div class="address">
-                       <h2>Please enter your username and password to login!</h2>
+                       <h2>Please enter your e-mail and password to login!</h2>
                     <form>
                         <div class="row">
                             <div class="col-sm-12">
-                                <input runat ="server" id="email" class="contactus" placeholder="Username" type="text" name="username">
+                                <input runat ="server" id="email" class="contactus" placeholder="e-mail" type="text" name="email">
                             </div>
                             <div class="col-sm-12">
                                 <input runat="server" id="pass" class="contactus" placeholder="Password" type="password" name="pass">
