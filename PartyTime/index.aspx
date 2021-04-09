@@ -28,6 +28,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
+        <!-- Info messages scripts-->
+     <script src="js/infoMessages.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
        <style>
            .btnDesign{
                color:#808080;
@@ -130,7 +134,11 @@
                         <br>
                             för att lösa din evenemangs planering.
                         </p>
+                         <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                         <ContentTemplate>
                           <button runat="server" id="planBtn"><a>Start planning</a></button>
+                         </ContentTemplate>
+                    </asp:UpdatePanel>
                     </div>
                 </div>
             </div>

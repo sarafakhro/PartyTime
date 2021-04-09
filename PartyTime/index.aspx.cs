@@ -12,7 +12,7 @@ namespace PartyTime
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Session["logged_User"] != null)
+            if (Session["user"] != null)
             {
                 dashBtn.Style.Add("display", "block");
                 logOutBtn.Style.Add("display", "block");
@@ -39,17 +39,25 @@ namespace PartyTime
 
         private void planBtn_ServerClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if (Session["user"] != null)
+            {
+                //Open user dash
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "mustLogin()", true);
+            }
         }
 
         private void dashBtn_ServerClick(object sender, EventArgs e)
         {
+            //Check if inlogged user admin or user and redirect to the right panel!
             throw new NotImplementedException();
         }
 
         private void logOutBtn_ServerClick(object sender, EventArgs e)
         {
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "alert('You will be logged out!')", true);
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "logOut()", true);
             Session.Abandon();
         }
 

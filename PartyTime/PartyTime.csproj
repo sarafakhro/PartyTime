@@ -93,6 +93,7 @@
     <Content Include="index.aspx" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\custom.js" />
+    <Content Include="js\infoMessages.js" />
     <Content Include="js\jquery-3.0.0.min.js" />
     <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
     <Content Include="js\jquery.min.js" />
