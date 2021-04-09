@@ -15,9 +15,9 @@ namespace PartyTime
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["User"] != null)
+            if (Session["user"] != null)
             {
-                userToken = Session["User"].ToString();
+                userToken = Session["user"].ToString();
 
             }
             logInBtm.ServerClick += logInBtm_ServerClick;
@@ -56,13 +56,15 @@ namespace PartyTime
             }
             else if (both == "")
             {
-                //empty fills
+                //empty fields
+                ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "emptyFields()", true);
                 clear();
 
             }
             else
             {
                 //wrong user or password.
+                ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "wrongEmail_Pass()", true);
                 clear();
             }
             con.Close();
