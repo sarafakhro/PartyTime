@@ -47,6 +47,9 @@ namespace PartyTime
                 if (ds.Tables[i].Rows[i]["UserType"].ToString() == "U")
                 {
                     //if you login and you're user.
+                    //take me one stage forward
+                    Response.Redirect("~/User/ProfilePage.aspx");
+
                 }
                 else
                 {

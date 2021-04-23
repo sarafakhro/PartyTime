@@ -47,7 +47,6 @@ namespace PartyTime
                         break;
 
                     }
-
                 }
                 if (userNameExist)
                 {
@@ -68,9 +67,9 @@ namespace PartyTime
                     SqlCommand cmd1 = new SqlCommand(procedureName,sqlConnection1); //Creating  SqlCommand  object.
                     cmd1.CommandType = System.Data.CommandType.StoredProcedure; //Here we declaring command type as stored Procedure.
                     //Adding paramerters to  SqlCommand below  
-                    cmd1.Parameters.AddWithValue("@username", userName.Value.ToString()); //Username. 
-                    cmd1.Parameters.AddWithValue("@password",pass.Value.ToString()); //Password.  
-                    cmd1.Parameters.AddWithValue("@Email", email.Value.ToString()); //Email.
+                    cmd1.Parameters.AddWithValue("@userName", userName.Value.ToString()); //Username. 
+                    cmd1.Parameters.AddWithValue("@passWord",pass.Value.ToString()); //Password.  
+                    cmd1.Parameters.AddWithValue("@eMail", email.Value.ToString()); //Email.
                     cmd1.Parameters.AddWithValue("@userType","U");  //Usertype.
                     cmd1.ExecuteNonQuery(); //Executing the sqlcommand.
                     sqlConnection1.Close(); // Close the connection to the database.
