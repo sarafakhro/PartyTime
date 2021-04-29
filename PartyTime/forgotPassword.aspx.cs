@@ -12,19 +12,28 @@ namespace PartyTime
     public partial class forgotPassword : System.Web.UI.Page
     {
         private string userPassword;
+
+        /**
+         * This method must start with a big letter.
+         */
         protected void Page_Load(object sender, EventArgs e)
         {
             getBtn.ServerClick += getBtn_ServerClick;
         }
 
+        /**
+         * This method connect to sql database to get the password for the e-mail
+         * based on if the user write a right e-mailaddress.
+         */
         private void getBtn_ServerClick(object sender, EventArgs e)
         {
+            //if the user writes any e-mailaddress
             if (email.Value != " ")
             {
                 string epost = email.Value;
                 SqlConnection sqlConnection = new SqlConnection(Database.connectionString.con);
                 sqlConnection.Open();
-                //för att vi har variabelnamn i string
+                //variablename in string
                 string query = "select Email,password from Users where (Email = '" + epost + "')";
                 SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
@@ -44,13 +53,10 @@ namespace PartyTime
                 {
                     //wrong email
                 }
-               
-
             }
             else
             {
                 //emptyfield
-
             }
         }
     }
