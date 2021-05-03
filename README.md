@@ -2,9 +2,7 @@
 Systemutveckling och projekt 1
 
 Skapad av : 
--Mohanad oweidat
 -Sara Bakdach Fakhro
--Bojana filipovic
 -Sarkis Baghdasarian 
 -Justine Jensen Nankya
 

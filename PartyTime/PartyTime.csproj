@@ -93,6 +93,7 @@
     <Content Include="index.aspx" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\custom.js" />
+    <Content Include="js\infoMessages.js" />
     <Content Include="js\jquery-3.0.0.min.js" />
     <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
     <Content Include="js\jquery.min.js" />
@@ -101,6 +102,7 @@
     <Content Include="js\popper.min.js" />
     <Content Include="signUp.aspx" />
     <Content Include="logIn.aspx" />
+    <Content Include="User\ProfilePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -148,9 +150,24 @@
     <Compile Include="signUp.aspx.designer.cs">
       <DependentUpon>signUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\ProfilePage.aspx.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ProfilePage.aspx.designer.cs">
+      <DependentUpon>ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserPanel.Master.cs">
+      <DependentUpon>UserPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserPanel.Master.designer.cs">
+      <DependentUpon>UserPanel.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="User\UserPanel.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

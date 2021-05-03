@@ -22,9 +22,9 @@ namespace PartyTime
         {
             if (checkEmpty())
             {
-                // ingen har skrivit nått 
+                // Empty fields
+                ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "emptyFields()", true);
                 return;
-
             }
             else
             {
@@ -47,43 +47,41 @@ namespace PartyTime
                         break;
 
                     }
-
                 }
                 if (userNameExist)
                 {
-                    //userName exist 
+                    //Username exist 
+                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "usernameExist()", true);
 
                 }
                 else if (emailExist)
                 {
-                    // email exist 
+                    // Email exist 
+                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "emailExist()", true);
                 }
                 else
                 {
-                    SqlConnection sqlConnection1 = new SqlConnection(Database.connectionString.con);
-                    sqlConnection1.Open();
-                    string procedureName = "sp_Users_addAccount";
-                    SqlCommand cmd1 = new SqlCommand(procedureName,sqlConnection1);
-                    cmd1.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd1.Parameters.AddWithValue("@username", userName.Value.ToString());
-                    cmd1.Parameters.AddWithValue("@password",pass.Value.ToString());
-                    cmd1.Parameters.AddWithValue("@Email", email.Value.ToString());
-                    cmd1.Parameters.AddWithValue("@userType","U");
-                    cmd1.ExecuteNonQuery();
-                    sqlConnection1.Close();
-                    Session["user"] = userName.Value.ToString();
-                    clear();
-                    Response.Redirect("logIn.aspx");
-
-
+                    SqlConnection sqlConnection1 = new SqlConnection(Database.connectionString.con); // Init the connenction.
+                    sqlConnection1.Open(); // Open the connection to the database.
+                    string procedureName = "sp_Users_addAccount"; //Stored Procedure name.
+                    SqlCommand cmd1 = new SqlCommand(procedureName,sqlConnection1); //Creating  SqlCommand  object.
+                    cmd1.CommandType = System.Data.CommandType.StoredProcedure; //Here we declaring command type as stored Procedure.
+                    //Adding paramerters to  SqlCommand below  
+                    cmd1.Parameters.AddWithValue("@userName", userName.Value.ToString()); //Username. 
+                    cmd1.Parameters.AddWithValue("@passWord",pass.Value.ToString()); //Password.  
+                    cmd1.Parameters.AddWithValue("@eMail", email.Value.ToString()); //Email.
+                    cmd1.Parameters.AddWithValue("@userType","U");  //Usertype.
+                    cmd1.ExecuteNonQuery(); //Executing the sqlcommand.
+                    sqlConnection1.Close(); // Close the connection to the database.
+                    Session["user"] = userName.Value.ToString(); // Saving username into the servere as a session called ["user"].
+                    clear(); //Clear the fields.
+                    Response.Redirect("logIn.aspx"); //Redirect to this site.
                 }
-
             }
         }
         private void clear()
         {
             userName.Value = email.Value = pass.Value = "";
-
         }
         private bool checkEmpty()
         {

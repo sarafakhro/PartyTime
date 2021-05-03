@@ -28,7 +28,7 @@ namespace PartyTime
         private void getBtn_ServerClick(object sender, EventArgs e)
         {
             //if the user writes any e-mailaddress
-            if (email.Value != " ")
+            if (email.Value != "")
             {
                 string epost = email.Value;
                 SqlConnection sqlConnection = new SqlConnection(Database.connectionString.con);
@@ -52,11 +52,14 @@ namespace PartyTime
                 else
                 {
                     //wrong email
+                    ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "wrongEmail()", true);
+                    email.Value = "";
                 }
             }
             else
             {
-                //emptyfield
+                //emptyfields
+                ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "emptyFields()", true);
             }
         }
     }

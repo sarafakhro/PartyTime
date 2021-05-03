@@ -28,6 +28,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
+    <!-- Info messages scripts-->
+     <script src="js/infoMessages.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <style>
         .btnDesign{
             color:#808080;
@@ -43,6 +47,11 @@
         .hideBtn{
             display:none;
         }
+         /*It will keep the footer at the bottom of the page*/
+           .egen {
+            height: 100%;
+            background-color: black;
+            }
     </style>
 
  </head>
@@ -156,36 +165,30 @@
     </div>
         <!-- End Contact form-->
      <br />
-           <!--  footer -->
-        <footer id="footer_with_contact">
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 width">
-                            <div class="address">
-                                 <ul class="locarion_icon">
-                                    <li>
-                                        <img src="icon/1.png" alt="icon" />Malmö</li>
-                                    <li>
-                                        <img src="icon/2.png" alt="icon" />Phonenumber : ( +46 768307878 )</li>
-                                    <li>
-                                        <img src="icon/3.png" alt="icon" />Email : partytimemau21@gmail.com</li>
-                                </ul>
-                             </div>
-                        </div>
-                          <div class="col-lg-6 col-md-6 col-sm-6 ">
-                            <div class="address">
-                                <h3>Party Time</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>© 2021 All Rights Reserved. Party Time</p>
-                </div>
-            </div>
-        </footer>
-        <!-- end footer -->
+                          <!-- Start Footer -->
+ <footer class=" text-white egen">
+   <!-- Start Grid container -->
+  <div class="container p-4">
+    <!-- Start section: Text -->
+    <section class="mb-4">
+       <ul class="locarion_icon">
+          <li><img src="../icon/1.png" alt="icon" />Malmö</li>
+          <li><img src="../icon/2.png" alt="icon" />Telefonnummer : ( +46 768307878 )</li>
+          <li><img src="../icon/3.png" alt="icon" />Email : demo@email.com</li>
+        </ul>
+    </section>
+    <!-- End section: Text -->
+  </div>
+  <!-- End grid container -->
+
+  <!--Start Copyright -->
+  <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+      <h2 style="color:white">
+     © 2021 All Rights Reserved. Party Time
+      </h2>
+  </div>
+  <!-- End Copyright -->
+ </footer>
 
          
          <!-- Javascript files-->
