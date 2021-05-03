@@ -62,3 +62,28 @@ function usernameExist() {
         footer: '<a href="LogIn.aspx">Log In?</a>'
     })
 }
+function doneInput() {
+    Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'Your parameters has been saved, we are generating suggestions for you.\nYou can find them att my planning page!',
+        footer: '<a href="myPlanning.aspx">My planning</a>'
+    })
+}
+
+
+function doneAdminInput() {
+    Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'Your parameters has been saved!'
+    })
+}
+
+function wrongExtesnion() {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Wrong picture exstension!',
+    })
+}
