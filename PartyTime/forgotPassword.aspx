@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="forgotPassword.aspx.cs" Inherits="PartyTime.forgotPassword" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="PartyTime.forgotPassword" %>
 
 <%-- Created by: Sara Bakdach Fakhro --%>
 <!DOCTYPE html>
@@ -29,9 +29,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
-    <!-- Info messages scripts-->
-     <script src="js/infoMessages.js"></script>
-     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- Footer style- put it at the bottom-->
     <style>
