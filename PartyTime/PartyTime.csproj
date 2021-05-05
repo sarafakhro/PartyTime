@@ -101,7 +101,7 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="signUp.aspx" />
-    <Content Include="logIn.aspx" />
+    <Content Include="LogIn.aspx" />
     <Content Include="User\ProfilePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -121,12 +121,12 @@
     <Compile Include="forgotPassword.aspx.designer.cs">
       <DependentUpon>forgotPassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="logIn.aspx.cs">
-      <DependentUpon>logIn.aspx</DependentUpon>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="logIn.aspx.designer.cs">
-      <DependentUpon>logIn.aspx</DependentUpon>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="contactUs.aspx.cs">
       <DependentUpon>contactUs.aspx</DependentUpon>

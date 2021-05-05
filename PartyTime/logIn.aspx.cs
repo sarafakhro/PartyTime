@@ -12,17 +12,18 @@ namespace PartyTime
     public partial class logIn : System.Web.UI.Page
     {
         private string userToken;
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user"] != null)
             {
                 userToken = Session["user"].ToString();
-
             }
             logInBtm.ServerClick += logInBtm_ServerClick;
         }
 
+        /**
+         * This function will run when the user presses on the login button.
+         */
         private void logInBtm_ServerClick(object sender, EventArgs e)
         {
             string epost = email.Value;
@@ -38,7 +39,6 @@ namespace PartyTime
             int i = 0;
             sda.Fill(ds, "Password");
             if (ds.Tables[i].Rows.Count > 0)
-
             {
                 if (userToken == null)
                 {
@@ -49,20 +49,17 @@ namespace PartyTime
                     //if you login and you're user.
                     //take me one stage forward
                     Response.Redirect("~/User/ProfilePage.aspx");
-
                 }
                 else
                 {
                     //if you login and you're admin.
                 }
-
             }
             else if (both == "")
             {
                 //empty fields
                 ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "emptyFields()", true);
                 clear();
-
             }
             else
             {
@@ -71,16 +68,14 @@ namespace PartyTime
                 clear();
             }
             con.Close();
-
         }
 
-
-
+        /**
+         * This function will reset the fields
+         */
         private void clear()
         {
             email.Value = pass.Value = "";
         }
     }
-
-   
 }
