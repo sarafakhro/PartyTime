@@ -67,8 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="aboutUs.aspx" />
-    <Content Include="contactUs.aspx" />
+    <Content Include="AboutUs.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\jquery-ui.css" />
@@ -91,7 +91,7 @@
     <Content Include="images\banner2.jpg" />
     <Content Include="images\loading.gif" />
     <Content Include="images\search.png" />
-    <Content Include="index.aspx" />
+    <Content Include="Index.aspx" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\custom.js" />
     <Content Include="js\infoMessages.js" />
@@ -103,17 +103,17 @@
     <Content Include="js\popper.min.js" />
     <Content Include="LogIn.aspx" />
     <Content Include="SignUp.aspx" />
-    <Content Include="User\planningPage.aspx" />
+    <Content Include="User\PlanningPage.aspx" />
     <Content Include="User\ProfilePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aboutUs.aspx.cs">
-      <DependentUpon>aboutUs.aspx</DependentUpon>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="aboutUs.aspx.designer.cs">
-      <DependentUpon>aboutUs.aspx</DependentUpon>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Database\connectionString.cs" />
     <Compile Include="Database\Helpers.cs" />
@@ -131,19 +131,19 @@
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
     </Compile>
-    <Compile Include="contactUs.aspx.cs">
-      <DependentUpon>contactUs.aspx</DependentUpon>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="contactUs.aspx.designer.cs">
-      <DependentUpon>contactUs.aspx</DependentUpon>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.aspx.cs">
@@ -153,12 +153,12 @@
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\planningPage.aspx.cs">
-      <DependentUpon>planningPage.aspx</DependentUpon>
+    <Compile Include="User\PlanningPage.aspx.cs">
+      <DependentUpon>PlanningPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\planningPage.aspx.designer.cs">
-      <DependentUpon>planningPage.aspx</DependentUpon>
+    <Compile Include="User\PlanningPage.aspx.designer.cs">
+      <DependentUpon>PlanningPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\ProfilePage.aspx.cs">
       <DependentUpon>ProfilePage.aspx</DependentUpon>
