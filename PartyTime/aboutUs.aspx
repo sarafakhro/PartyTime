@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="aboutUs.aspx.cs" Inherits="PartyTime.aboutUs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AboutUs.aspx.cs" Inherits="PartyTime.aboutUs" %>
 
  <%-- Created by: Sara Bakdach Fakhro --%>
 <!DOCTYPE html>
