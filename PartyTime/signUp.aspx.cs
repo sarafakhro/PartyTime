@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace PartyTime
 {
-    public partial class signUp : System.Web.UI.Page
+    public partial class SignUp : System.Web.UI.Page
     {
         private bool emailExist = false;
         private bool userNameExist = false;
@@ -42,7 +42,7 @@ namespace PartyTime
                 sqlReader = cmd.ExecuteReader();
                 while (sqlReader.Read())
                 {
-                    if (sqlReader[1].ToString() ==userName.Value)
+                    if (sqlReader[1].ToString() == userName.Value)
                     {
                         userNameExist = true;
                         break;
@@ -68,13 +68,13 @@ namespace PartyTime
                     con = new SqlConnection(Database.connectionString.con); // Init the connenction.
                     con.Open(); // Open the connection to the database.
                     string procedureName = "sp_Users_addAccount"; //Stored Procedure name.
-                    cmd = new SqlCommand(procedureName,con); //Creating  SqlCommand  object.
+                    cmd = new SqlCommand(procedureName, con); //Creating  SqlCommand  object.
                     cmd.CommandType = System.Data.CommandType.StoredProcedure; //Here we declaring command type as stored Procedure.
                     //Adding paramerters to  SqlCommand below  
                     cmd.Parameters.AddWithValue("@userName", userName.Value.ToString()); //Username. 
-                    cmd.Parameters.AddWithValue("@passWord",pass.Value.ToString()); //Password.  
+                    cmd.Parameters.AddWithValue("@passWord", pass.Value.ToString()); //Password.  
                     cmd.Parameters.AddWithValue("@eMail", email.Value.ToString()); //Email.
-                    cmd.Parameters.AddWithValue("@userType","U");  //Usertype.
+                    cmd.Parameters.AddWithValue("@userType", "U");  //Usertype.
                     cmd.ExecuteNonQuery(); //Executing the sqlcommand.
                     con.Close(); // Close the connection to the database.
                     Session["user"] = userName.Value.ToString(); // Saving username into the servere as a session called ["user"].
@@ -97,11 +97,12 @@ namespace PartyTime
         */
         private bool checkEmpty()
         {
-            if (userName.Value== "" || email.Value=="" || pass.Value=="")
+            if (userName.Value == "" || email.Value == "" || pass.Value == "")
             {
                 return true;
             }
             return false;
         }
+
     }
 }

@@ -1,5 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="PartyTime.signUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="PartyTime.SignUp" %>
 
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <%-- Created by: Sarkis Baghdasarian --%>
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
@@ -46,9 +49,9 @@
 }
     </style>
    </head>
- <body>
-      <form id="form1" runat="server">
-            <!-- Start Signup  Title-->
+<body>
+    <form id="form1" runat="server">
+        <!-- Start Signup  Title-->
          <div class="contactbg">
         <div class="container">
             <div class="row">
@@ -105,6 +108,7 @@
                     <p style="background-color:orangered">© 2021 All Rights Reserved. Party Time</p>
                 </div>
           <!-- end footer -->
+
     </form>
 </body>
 </html>

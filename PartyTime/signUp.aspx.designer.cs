@@ -11,7 +11,7 @@ namespace PartyTime
 {
 
 
-    public partial class signUp
+    public partial class SignUp
     {
 
         /// <summary>
