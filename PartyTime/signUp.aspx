@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signUp.aspx.cs" Inherits="PartyTime.signUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="PartyTime.signUp" %>
 
 <%-- Created by: Sarkis Baghdasarian --%>
     <!DOCTYPE html>
