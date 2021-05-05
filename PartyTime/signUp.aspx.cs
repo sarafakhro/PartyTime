@@ -12,12 +12,18 @@ namespace PartyTime
     {
         private bool emailExist = false;
         private bool userNameExist = false;
-
+        private SqlConnection con;
+        private SqlCommand cmd;
+        private SqlDataReader sqlReader;
         protected void Page_Load(object sender, EventArgs e)
         {
             signUpBtm.ServerClick += signUpBtm_ServerClick;
         }
 
+        /**
+         * This function will run when u click on the butten 
+         * This function will create an account for the user
+         */
         private void signUpBtm_ServerClick(object sender, EventArgs e)
         {
             if (checkEmpty())
@@ -28,12 +34,12 @@ namespace PartyTime
             }
             else
             {
-                SqlConnection con = new SqlConnection(Database.connectionString.con);
+                con = new SqlConnection(Database.connectionString.con);
                 con.Open();
-                SqlCommand cmd = new SqlCommand();
+                cmd = new SqlCommand();
                 cmd.CommandText = "select * from [Users] ";
                 cmd.Connection = con;
-                SqlDataReader sqlReader = cmd.ExecuteReader();
+                sqlReader = cmd.ExecuteReader();
                 while (sqlReader.Read())
                 {
                     if (sqlReader[1].ToString() ==userName.Value)
@@ -45,14 +51,12 @@ namespace PartyTime
                     {
                         emailExist = true;
                         break;
-
                     }
                 }
                 if (userNameExist)
                 {
                     //Username exist 
                     ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "usernameExist()", true);
-
                 }
                 else if (emailExist)
                 {
@@ -61,28 +65,36 @@ namespace PartyTime
                 }
                 else
                 {
-                    SqlConnection sqlConnection1 = new SqlConnection(Database.connectionString.con); // Init the connenction.
-                    sqlConnection1.Open(); // Open the connection to the database.
+                    con = new SqlConnection(Database.connectionString.con); // Init the connenction.
+                    con.Open(); // Open the connection to the database.
                     string procedureName = "sp_Users_addAccount"; //Stored Procedure name.
-                    SqlCommand cmd1 = new SqlCommand(procedureName,sqlConnection1); //Creating  SqlCommand  object.
-                    cmd1.CommandType = System.Data.CommandType.StoredProcedure; //Here we declaring command type as stored Procedure.
+                    cmd = new SqlCommand(procedureName,con); //Creating  SqlCommand  object.
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure; //Here we declaring command type as stored Procedure.
                     //Adding paramerters to  SqlCommand below  
-                    cmd1.Parameters.AddWithValue("@userName", userName.Value.ToString()); //Username. 
-                    cmd1.Parameters.AddWithValue("@passWord",pass.Value.ToString()); //Password.  
-                    cmd1.Parameters.AddWithValue("@eMail", email.Value.ToString()); //Email.
-                    cmd1.Parameters.AddWithValue("@userType","U");  //Usertype.
-                    cmd1.ExecuteNonQuery(); //Executing the sqlcommand.
-                    sqlConnection1.Close(); // Close the connection to the database.
+                    cmd.Parameters.AddWithValue("@userName", userName.Value.ToString()); //Username. 
+                    cmd.Parameters.AddWithValue("@passWord",pass.Value.ToString()); //Password.  
+                    cmd.Parameters.AddWithValue("@eMail", email.Value.ToString()); //Email.
+                    cmd.Parameters.AddWithValue("@userType","U");  //Usertype.
+                    cmd.ExecuteNonQuery(); //Executing the sqlcommand.
+                    con.Close(); // Close the connection to the database.
                     Session["user"] = userName.Value.ToString(); // Saving username into the servere as a session called ["user"].
                     clear(); //Clear the fields.
                     Response.Redirect("logIn.aspx"); //Redirect to this site.
                 }
             }
         }
+
+        /**
+        * This fuction will reset the field 
+        */
         private void clear()
         {
             userName.Value = email.Value = pass.Value = "";
         }
+
+        /**
+        * This function will check if the fields are empty
+        */
         private bool checkEmpty()
         {
             if (userName.Value== "" || email.Value=="" || pass.Value=="")
