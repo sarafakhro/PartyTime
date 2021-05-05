@@ -103,7 +103,6 @@
     <Content Include="js\popper.min.js" />
     <Content Include="signUp.aspx" />
     <Content Include="LogIn.aspx" />
-    <Content Include="SignUp.aspx" />
     <Content Include="User\planningPage.aspx" />
     <Content Include="User\ProfilePage.aspx" />
     <Content Include="Web.config" />

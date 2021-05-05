@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="logIn.aspx.cs" Inherits="PartyTime.logIn" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="PartyTime.logIn" %>
 
 <%-- Created by: Justine Jensen  --%>
 <!DOCTYPE html>
