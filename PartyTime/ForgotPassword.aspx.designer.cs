@@ -7,30 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PartyTime.User
+namespace PartyTime
 {
 
 
-    public partial class ProfilePage
+    public partial class forgotPassword
     {
 
         /// <summary>
-        /// loggedUser control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label loggedUser;
-
-        /// <summary>
-        /// username control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText username;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// email control.
@@ -39,42 +30,33 @@ namespace PartyTime.User
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText email;
 
         /// <summary>
-        /// password control.
+        /// passwordLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText password;
+        protected global::System.Web.UI.WebControls.Label passwordLabel;
 
         /// <summary>
-        /// saveBtn control.
+        /// getBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton saveBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlButton getBtn;
 
         /// <summary>
-        /// resetBtn control.
+        /// logInBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton resetBtn;
-
-        /// <summary>
-        /// infoLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label infoLabel;
+        protected global::System.Web.UI.HtmlControls.HtmlButton logInBtn;
     }
 }

@@ -11,70 +11,70 @@ namespace PartyTime.User
 {
 
 
-    public partial class ProfilePage
+    public partial class planningPage
     {
 
         /// <summary>
-        /// loggedUser control.
+        /// wlcLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label loggedUser;
+        protected global::System.Web.UI.WebControls.Label wlcLabel;
 
         /// <summary>
-        /// username control.
+        /// partyTypeDrop1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText username;
+        protected global::System.Web.UI.WebControls.DropDownList partyTypeDrop1;
 
         /// <summary>
-        /// email control.
+        /// decorationSuggestionsDrop1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email;
+        protected global::System.Web.UI.WebControls.DropDownList decorationSuggestionsDrop1;
 
         /// <summary>
-        /// password control.
+        /// foodTypeDrop1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText password;
+        protected global::System.Web.UI.WebControls.DropDownList foodTypeDrop1;
 
         /// <summary>
-        /// saveBtn control.
+        /// childNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton saveBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl childNumber;
 
         /// <summary>
-        /// resetBtn control.
+        /// adulNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton resetBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl adulNumber;
 
         /// <summary>
-        /// infoLabel control.
+        /// doneBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label infoLabel;
+        protected global::System.Web.UI.HtmlControls.HtmlButton doneBtn;
     }
 }
