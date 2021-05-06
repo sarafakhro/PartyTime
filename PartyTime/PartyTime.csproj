@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -103,6 +109,7 @@
     <Content Include="js\popper.min.js" />
     <Content Include="LogIn.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="User\MyPlanning.aspx" />
     <Content Include="User\PlanningPage.aspx" />
     <Content Include="User\ProfilePage.aspx" />
     <Content Include="Web.config" />
@@ -152,6 +159,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MyPlanning.aspx.cs">
+      <DependentUpon>MyPlanning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MyPlanning.aspx.designer.cs">
+      <DependentUpon>MyPlanning.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\PlanningPage.aspx.cs">
       <DependentUpon>PlanningPage.aspx</DependentUpon>
