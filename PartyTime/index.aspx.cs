@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PartyTime.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,8 @@ namespace PartyTime
 {
     public partial class index : System.Web.UI.Page
     {
+        private Helpers helpers;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -41,7 +44,8 @@ namespace PartyTime
         {
             if (Session["user"] != null)
             {
-                //Open user dash
+                //Open the dash
+                Response.Redirect("~/User/PlanningPage.aspx");
             }
             else
             {
@@ -52,7 +56,18 @@ namespace PartyTime
         private void dashBtn_ServerClick(object sender, EventArgs e)
         {
             //Check if inlogged user admin or user and redirect to the right panel!
-            throw new NotImplementedException();
+            helpers = new Helpers();
+            if (helpers.checkUserType())
+            {
+                //The logged user is not admin!
+                Response.Redirect("~/User/PlanningPage.aspx");
+            }
+            else
+            {
+                //The logged user is admin!
+                Response.Redirect("~/Admin/adminstration.aspx");
+
+            }
         }
 
         private void logOutBtn_ServerClick(object sender, EventArgs e)

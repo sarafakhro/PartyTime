@@ -18,11 +18,11 @@
     <%-- Logic for the active links --%>
      <%
          string id = "";
-         if (Request.Url.AbsolutePath.Contains("plannigPage"))
+         if (Request.Url.AbsolutePath.Contains("PlanningPage"))
          {
              id = "Planning";
          }
-         else if (Request.Url.AbsolutePath.Contains("myPlanning"))
+         else if (Request.Url.AbsolutePath.Contains("MyPlanning"))
          {
              id = "myPlan";
          }
@@ -70,16 +70,16 @@
             <ContentTemplate> 
                 <%--Navbar--%>
                 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-        <a href="#" class="navbar-brand">Brand</a>
+        <a href="#" class="navbar-brand"><img height="50" src="../images/logo.png" alt="logo" /></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="../index.aspx" class="nav-item nav-link">Home page</a>
-                <a href="plannigPage.aspx" id="Planning" class="nav-item nav-link">Planning</a>
-                <a href="myPlanning.aspx" id="myPlan" class="nav-item nav-link">My planning</a>
+                <a href="../Index.aspx" class="nav-item nav-link">Home page</a>
+                <a href="planningPage.aspx" id="Planning" class="nav-item nav-link">Planning</a>
+                <a href="MyPlanning.aspx" id="myPlan" class="nav-item nav-link">My planning</a>
             </div>
 
             <div class="navbar-nav ml-auto">
@@ -93,6 +93,7 @@
        <%-- middle page content--%>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+        <br />
        <%--Footer--%>
         <!--Start Footer-->
  <footer class=" text-white egen">
@@ -102,8 +103,7 @@
     <section class="mb-4">
        <ul class="locarion_icon foo">
           <li><img src="../icon/1.png" alt="icon" />Malmö</li>
-          <li><img src="../icon/2.png" alt="icon" />Telefonnummer : ( +46 768307878 )</li>
-          <li><img src="../icon/3.png" alt="icon" />Email : demo@email.com</li>
+          <li><img src="../icon/3.png" alt="icon" />Email : partytimemau21@gmail.com</li>
         </ul>
     </section>
     <!-- End section: Text -->

@@ -76,7 +76,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.html"><img height="50" src="images/logo.png" alt="logo" /></a>
+                                    <a href="index.aspx"><img height="50" src="images/logo.png" alt="logo" /></a>
                                 </div>
                             </div>
                         </div>
@@ -135,11 +135,6 @@
                             <br>
                             Välkommen!
                          </h1>
-                        <p>
-                            Vi leverar dig en enekl samt en smidig lösning 
-                        <br>
-                            för att lösa din evenemangs planering.
-                        </p>
                          <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                          <ContentTemplate>
                           <button runat="server" id="planBtn"><a>Start planning</a></button>
@@ -157,8 +152,6 @@
                     <div class="col-md-12">
                         <div class="titlepage">
                             <h2>Planering exempel:</h2>
-                            <span>Här nedan får du se några bilder på<br>
-                                några planering förslag som tillhör våra kunder.</span>
                         </div>
                     </div>
                 </div>
@@ -166,11 +159,11 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
-                                <a href="images/album1.jpg">
-                                    <img src="images/album1.jpg">
+                                <a href="images/children.jpg">
+                                    <img src="images/children.jpg">
                                 </a>
                                 <span class="hoverle">
-                                    <a href="images/album1.jpg">
+                                    <a href="images/children.jpg">
                                         <img src="images/search.png"></a>
                                 </span>
                             </figure>
@@ -179,11 +172,11 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
-                                <a href="images/album2.jpg">
-                                    <img src="images/album2.jpg">
+                                <a href="images/wedding.jpg">
+                                    <img src="images/wedding.jpg">
                                 </a>
                                 <span class="hoverle">
-                                    <a href="images/album2.jpg">
+                                    <a href="images/wedding.jpg">
                                         <img src="images/search.png"></a>
                                 </span>
                             </figure>
@@ -192,11 +185,11 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
-                                <a href="images/album1.jpg">
-                                    <img src="images/album1.jpg">
+                                <a href="images/conferance.jpg">
+                                    <img src="images/conferance.jpg">
                                 </a>
                                 <span class="hoverle">
-                                    <a href="images/album1.jpg">
+                                    <a href="images/conferance.jpg">
                                         <img src="images/search.png"></a>
                                 </span>
                             </figure>
@@ -205,11 +198,11 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
                         <div class="Albums-box">
                             <figure>
-                                <a href="images/album2.jpg">
-                                    <img src="images/album2.jpg">
+                                <a href="images/conferance2.jpg">
+                                    <img src="images/conferance2.jpg">
                                 </a>
                                 <span class="hoverle">
-                                    <a href="images/album2.jpg">
+                                    <a href="images/conferance2.jpg">
                                         <img src="images/search.png"></a>
                                 </span>
                             </figure>
@@ -228,8 +221,7 @@
     <section class="mb-4">
        <ul class="locarion_icon">
           <li><img src="../icon/1.png" alt="icon" />Malmö</li>
-          <li><img src="../icon/2.png" alt="icon" />Telefonnummer : ( +46 768307878 )</li>
-          <li><img src="../icon/3.png" alt="icon" />Email : demo@email.com</li>
+          <li><img src="../icon/3.png" alt="icon" />Email : partytimemau21@gmail.com</li>
         </ul>
     </section>
     <!-- End section: Text -->

@@ -85,7 +85,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/logo.jpg" alt="logo" /></a>
+                                    <a href="index.aspx"><img src="images/logo.png" alt="logo" /></a>
                                 </div>
                             </div>
                         </div>
@@ -155,13 +155,14 @@
                     <div class="titlepage">
                         <h2>Vem är vi?</h2>
                             <span>
-                                Vi är fem passionerade studenter som ger dig den bästa planeringsverktyg för dig som vill planera en fest eller evangemang.
+                                Vi är tre passionerade studenter som erbjuder den bästa planeringsverktyg för dig som vill planera en fest eller evenemang.<br/> 
+                                Vi finns i Malmö och studerar på Malmö universitet. 
                              </span>
                      </div>
                     <div class="titlepage">
                         <h2>Vad är vårt mål?</h2>
-                            <span>Vårt mål är att leverera det bästa upplevelse till<br>
-                                våra kunder samt se till att underlätta så mycket som möjligt!</span>
+                            <span>Vårt mål är att leverera det bästa planeringsverktyg både för dig som privatperson men även till företag som är i behov av att få hjälp med att planera ett evenemang. Vi hoppas på att du får den bästa tjänsten och lycka till med planeringen!
+                                  
                     </div>
                 </div>
             </div>
@@ -175,8 +176,7 @@
     <section class="mb-4">
        <ul class="locarion_icon">
           <li><img src="../icon/1.png" alt="icon" />Malmö</li>
-          <li><img src="../icon/2.png" alt="icon" />Telefonnummer : ( +46 768307878 )</li>
-          <li><img src="../icon/3.png" alt="icon" />Email : demo@email.com</li>
+          <li><img src="../icon/3.png" alt="icon" />Email : partytimemau21@gmail.com</li>
         </ul>
     </section>
     <!-- End section: Text -->

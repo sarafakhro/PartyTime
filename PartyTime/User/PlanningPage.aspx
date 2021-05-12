@@ -59,7 +59,7 @@ Specialkost/mat:
         </div>
     <!-- Script for color chagning-->
        <script type="text/javascript">
-           var colors = ['1abc9c', '2c3e50', '2980b9', '7f8c8d', 'f1c40f', 'd35400', '27ae60'];
+           var colors = ['1abc9c', '2c3e50', '2980b9', '7f8c8d', 'f1c40f', 'd35400', '27ae60', 'e8b5cf'];
 
            colors.each(function (color) {
                $$('.color-picker')[0].insert(
