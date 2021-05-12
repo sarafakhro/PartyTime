@@ -73,8 +73,8 @@
                             <div class="full">
                                 <div class="center-desk">
                                     <div class="logo">
-                                        <a href="index.html">
-                                            <img src="images/logo.jpg" alt="logo" /></a>
+                                        <a href="index.aspx">
+                                            <img src="images/logo.png" alt="logo" /></a>
                                          <%-- <a href="index.aspx">Party Time</a>--%>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@
                                      <ContentTemplate>
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
-                                            <li><a href="index.aspx">Start menu</a></li>
+                                            <li><a href="index.aspx">Home</a></li>
                                             <li><a href="aboutUs.aspx">About us</a></li>
                                             <li class="active"><a href="KontaktaOss.aspx">Contact us</a></li>
                                             &nbsp
@@ -173,8 +173,7 @@
     <section class="mb-4">
        <ul class="locarion_icon">
           <li><img src="../icon/1.png" alt="icon" />Malmö</li>
-          <li><img src="../icon/2.png" alt="icon" />Telefonnummer : ( +46 768307878 )</li>
-          <li><img src="../icon/3.png" alt="icon" />Email : demo@email.com</li>
+          <li><img src="../icon/3.png" alt="icon" />Email : partytimemau21@gmail.com</li>
         </ul>
     </section>
     <!-- End section: Text -->
