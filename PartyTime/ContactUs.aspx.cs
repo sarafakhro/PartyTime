@@ -10,33 +10,34 @@ namespace PartyTime
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if there is a user
             if(Session["user"] != null)
             {
+                //hide buttons
                 dashBtn.Style.Add("display", "block");
                 logOutBtn.Style.Add("display", "block");
-
                 logInBtn.Visible = false;
                 signUpBtn.Visible = false;
-
             }
             else
             {
+                //else vice versa
                 dashBtn.Style.Add("display", "none");
                 logOutBtn.Style.Add("display", "none");
-
                 logOutBtn.Visible = true;
                 signUpBtn.Visible = true;
             }
-
-
             logInBtn.ServerClick += logInBtn_ServerClick;
             signUpBtn.ServerClick += signUpBtn_ServerClick;
             logOutBtn.ServerClick += LogOutBtn_ServerClick;
             dashBtn.ServerClick += DashBtn_ServerClick;
             send_btn.ServerClick += Send_btn_ServerClick;
-
         }
 
+        /**
+         * Send button
+         * User can click on the send-button.
+         */
         private void Send_btn_ServerClick(object sender, EventArgs e)
         {
             if (checkempty())
@@ -47,7 +48,8 @@ namespace PartyTime
             else
             {
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-                smtp.Credentials = new System.Net.NetworkCredential("partytimemau21@gmail.com", "Party2021"); // Email och lösenord för Party Time
+                //e-mailaddress and password for partytime
+                smtp.Credentials = new System.Net.NetworkCredential("partytimemau21@gmail.com", "Party2021");
                 smtp.EnableSsl = true;
                 MailMessage msg = new MailMessage();
                 msg.Subject = "Meddelande från en Användare!";
@@ -61,9 +63,11 @@ namespace PartyTime
             }
         }
 
+        /**
+         * Check if inlogged user admin or user and redirect to the right panel!
+         */
         private void DashBtn_ServerClick(object sender, EventArgs e)
         {
-            //Check if inlogged user admin or user and redirect to the right panel!
             throw new NotImplementedException();
         }
 
@@ -82,9 +86,13 @@ namespace PartyTime
         {
             Response.Redirect("logIn.aspx");
         }
+
+        /**
+         * This function will check if the user has written any text in the fields. 
+         */
         private bool checkempty()
         {
-            //om alla fälten är toma
+            //if all fields are empty
             if(name.Value == "" || phone.Value == "" || email.Value == "" || message.Value == "")
             {
                 //empty fields
@@ -92,11 +100,13 @@ namespace PartyTime
             }
             return false;
         }
+
+        /**
+         * This function clear up after the user write and the user are done.
+         */
         private void clear()
         {
-            //clear funktionen är bara till att ta bort efter man har skrivit och gjort vad man behöver
             name.Value = phone.Value = email.Value = message.Value = "";
         }
-
     }
 }

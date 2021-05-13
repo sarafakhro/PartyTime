@@ -31,28 +31,28 @@ namespace PartyTime.User
         private void exportBtn_ServerClick(object sender, EventArgs e)
         {
             int columnsCount = generatedGridView.HeaderRow.Cells.Count;
-            // Create the PDF Table specifying the number of columns
+            // Create the PDF table specifying the number of columns
             PdfPTable pdfTable = new PdfPTable(columnsCount);
-            // Loop thru each cell in GrdiView header row
+            //Loop thru each cell in GrdiView header row
             foreach (TableCell gridViewHeaderCell in generatedGridView.HeaderRow.Cells)
             {
-                // Create the Font Object for PDF document
+                //Create the Font Object for PDF document
                 Font font = new Font();
-                // Set the font color to GridView header row font color
+                //Set the font color to GridView header row font color
                 font.Color = new BaseColor(generatedGridView.HeaderStyle.ForeColor);
-                // Create the PDF cell, specifying the text and font
+                //Create the PDF cell, specifying the text and font
                 PdfPCell pdfCell = new PdfPCell(new Phrase(gridViewHeaderCell.Text, font));
-                // Set the PDF cell backgroundcolor to GridView header row BackgroundColor color
+                //Set the PDF cell backgroundcolor to GridView header row BackgroundColor color
                 pdfCell.BackgroundColor = new BaseColor(generatedGridView.HeaderStyle.BackColor);
-                // Add the cell to PDF table
+                //Add the cell to PDF table
                 pdfTable.AddCell(pdfCell);
             }
-            // Loop thru each datarow in GrdiView
+            //Loop thru each datarow in GrdiView
             foreach (GridViewRow gridViewRow in generatedGridView.Rows)
             {
                 if (gridViewRow.RowType == DataControlRowType.DataRow)
                 {
-                    // Loop thru each cell in GrdiView data row
+                    //Loop thru each cell in GrdiView data row
                     foreach (TableCell gridViewCell in gridViewRow.Cells)
                     {
                         Font font = new Font();
