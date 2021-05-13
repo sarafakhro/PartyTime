@@ -14,7 +14,7 @@ namespace PartyTime
         private string userPassword;
 
         /**
-         * This method must start with a big letter.
+         * This method must start with a big letter and cannot be changed.
          */
         protected void Page_Load(object sender, EventArgs e)
         {

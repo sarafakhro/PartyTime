@@ -14,25 +14,22 @@ namespace PartyTime
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //if there is a user
             if (Session["user"] != null)
             {
                 dashBtn.Style.Add("display", "block");
                 logOutBtn.Style.Add("display", "block");
-
                 logInBtn.Visible = false;
                 signUpBtn.Visible = false;
             }
             else
             {
+                //else vice versa
                dashBtn.Style.Add("display", "none");
                logOutBtn.Style.Add("display", "none");
-
                logInBtn.Visible = true;
                signUpBtn.Visible = true;
              }
-
-
             logInBtn.ServerClick += logInBtn_ServerClick;
             signUpBtn.ServerClick += signUpBtn_ServerClick;
             logOutBtn.ServerClick += logOutBtn_ServerClick;
@@ -40,11 +37,16 @@ namespace PartyTime
             planBtn.ServerClick += planBtn_ServerClick;
         }
 
+        /**
+         * This method will make it possible for the user to begin planning
+         * if the user is logged in.
+         */
         private void planBtn_ServerClick(object sender, EventArgs e)
         {
+            //if there is a user
             if (Session["user"] != null)
             {
-                //Open the dash
+                //open the dash to PlanningPage
                 Response.Redirect("~/User/PlanningPage.aspx");
             }
             else
@@ -55,16 +57,16 @@ namespace PartyTime
 
         private void dashBtn_ServerClick(object sender, EventArgs e)
         {
-            //Check if inlogged user admin or user and redirect to the right panel!
+            //check if inlogged user admin or user and redirect to the right panel
             helpers = new Helpers();
             if (helpers.checkUserType())
             {
-                //The logged user is not admin!
+                //the logged user is not admin
                 Response.Redirect("~/User/PlanningPage.aspx");
             }
             else
             {
-                //The logged user is admin!
+                //the logged user is admin
                 Response.Redirect("~/Admin/adminstration.aspx");
 
             }
