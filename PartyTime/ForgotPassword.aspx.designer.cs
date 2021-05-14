@@ -11,7 +11,7 @@ namespace PartyTime
 {
 
 
-    public partial class forgotPassword
+    public partial class ForgotPassword
     {
 
         /// <summary>

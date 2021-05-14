@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace PartyTime.User
 {
-    public partial class planningPage : System.Web.UI.Page
+    public partial class PlanningPage : System.Web.UI.Page
     {
         private Helpers helpers; 
         private SqlConnection sql;

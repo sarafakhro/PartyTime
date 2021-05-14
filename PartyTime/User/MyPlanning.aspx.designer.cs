@@ -11,7 +11,7 @@ namespace PartyTime.User
 {
 
 
-    public partial class myPlanning
+    public partial class MyPlanning
     {
 
         /// <summary>

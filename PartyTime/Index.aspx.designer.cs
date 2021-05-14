@@ -11,7 +11,7 @@ namespace PartyTime
 {
 
 
-    public partial class index
+    public partial class Index
     {
 
         /// <summary>

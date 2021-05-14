@@ -11,7 +11,7 @@ namespace PartyTime
 {
 
 
-    public partial class aboutUs
+    public partial class AboutUs
     {
 
         /// <summary>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AboutUs.aspx.cs" Inherits="PartyTime.aboutUs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AboutUs.aspx.cs" Inherits="PartyTime.AboutUs" %>
 
  <%-- Created by: Sara Bakdach Fakhro --%>
 <!DOCTYPE html>
@@ -155,14 +155,15 @@
                     <div class="titlepage">
                         <h2>Vem är vi?</h2>
                             <span>
-                                Vi är tre passionerade studenter som erbjuder den bästa planeringsverktyg för dig som vill planera en fest eller evenemang.<br/> 
-                                Vi finns i Malmö och studerar på Malmö universitet. 
+                                Vi är tre passionerade studenter som studerar på Malmö universitet. Vi startade år 2021 med ett projekt i syfte med att utveckla en webbsida som erbjuder ett planeringsverktyg för dig som vill anordna en fest och till företag som är i behov av att få hjälp med att planera en konferens. Vår gör vår idé till verklighet!
                              </span>
                      </div>
                     <div class="titlepage">
-                        <h2>Vad är vårt mål?</h2>
-                            <span>Vårt mål är att leverera det bästa planeringsverktyg både för dig som privatperson men även till företag som är i behov av att få hjälp med att planera ett evenemang. Vi hoppas på att du får den bästa tjänsten och lycka till med planeringen!
-                                  
+                        <h2>
+                            <br />Vad är vårt mål?</h2>
+                            <span>Vårt mål är att erbjuda det bästa planeringsverktyg och underlätta planeringen för dig. Vi vet att det kan vara stressigt att anordna en fest men vi finns för att göra jobbet åt dig. Webbsidan ska vara enkel att använda och du ska enkelt kunna klicka dig fram i planeringsverktyget. Man behöver inte vara en tekniskt lagd person för att utnyttja vår tjänst då vår webbsida är anpassad för dig som är oteknisk. 
+                                <br/>Lycka till med planeringen!
+                            </span>    
                     </div>
                 </div>
             </div>
