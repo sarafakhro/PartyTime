@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="PartyTime.contactUs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="PartyTime.ContactUs" %>
 
  <%-- Created by: Bojana Filipovic --%>
 <!DOCTYPE html>

@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace PartyTime
 {
-    public partial class logIn : System.Web.UI.Page
+    public partial class LogIn : System.Web.UI.Page
     {
         private string userToken;
         protected void Page_Load(object sender, EventArgs e)

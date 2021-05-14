@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/UserPanel.Master" AutoEventWireup="true" CodeBehind="PlanningPage.aspx.cs" Inherits="PartyTime.User.planningPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/UserPanel.Master" AutoEventWireup="true" CodeBehind="PlanningPage.aspx.cs" Inherits="PartyTime.User.PlanningPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../css/planningPageStyle.css" rel="stylesheet" />
     <!-- Preventing the content form hiding-->   

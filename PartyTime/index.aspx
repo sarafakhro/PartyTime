@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="PartyTime.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="PartyTime.Index" %>
 
  <%-- Created by: Mohanad Oweidat --%>
 <!DOCTYPE html>

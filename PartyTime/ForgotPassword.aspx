@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="PartyTime.forgotPassword" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="PartyTime.ForgotPassword" %>
 
 <%-- Created by: Sara Bakdach Fakhro --%>
 <!DOCTYPE html>

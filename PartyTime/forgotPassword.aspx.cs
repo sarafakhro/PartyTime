@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace PartyTime
 {
-    public partial class forgotPassword : System.Web.UI.Page
+    public partial class ForgotPassword : System.Web.UI.Page
     {
         private string userPassword;
 

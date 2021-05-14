@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/UserPanel.Master" AutoEventWireup="true" CodeBehind="MyPlanning.aspx.cs" Inherits="PartyTime.User.myPlanning" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User/UserPanel.Master" AutoEventWireup="true" CodeBehind="MyPlanning.aspx.cs" Inherits="PartyTime.User.MyPlanning" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <!-- Info messages scripts-->
      <script src="../js/infoMessages.js"></script>

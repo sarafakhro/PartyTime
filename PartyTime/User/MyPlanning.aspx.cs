@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PartyTime.User
 {
-    public partial class myPlanning : System.Web.UI.Page
+    public partial class MyPlanning : System.Web.UI.Page
     {
         private SqlConnection sql;
         private SqlDataReader sdr;
