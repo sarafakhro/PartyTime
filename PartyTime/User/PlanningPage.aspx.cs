@@ -19,7 +19,7 @@ namespace PartyTime.User
         private DataTable dt;
         protected void Page_Load(object sender, EventArgs e)
         {
-            wlcLabel.Text = "Welcome back:" + Session["user"];
+            wlcLabel.Text = "Welcome back: " + Session["user"];
             helpers = new Helpers();
             if (!IsPostBack)
             {
