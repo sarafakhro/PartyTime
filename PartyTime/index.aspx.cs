@@ -10,6 +10,7 @@ namespace PartyTime
 {
     public partial class Index : System.Web.UI.Page
     {
+        //database connection
         private Helpers helpers;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -30,6 +31,8 @@ namespace PartyTime
                logInBtn.Visible = true;
                signUpBtn.Visible = true;
              }
+            //connect buttons with functions
+            //make it possible for the user to click on the buttons
             logInBtn.ServerClick += logInBtn_ServerClick;
             signUpBtn.ServerClick += signUpBtn_ServerClick;
             logOutBtn.ServerClick += logOutBtn_ServerClick;
@@ -49,12 +52,17 @@ namespace PartyTime
                 //open the dash to PlanningPage
                 Response.Redirect("~/User/PlanningPage.aspx");
             }
+            //error message that tell the user you must be logged in to continue
             else
             {
                 ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "mustLogin()", true);
             }
         }
 
+        /*
+         * This method check if the user is admin or user and
+         * redirect to the right side
+         */
         private void dashBtn_ServerClick(object sender, EventArgs e)
         {
             //check if inlogged user admin or user and redirect to the right panel
@@ -72,6 +80,12 @@ namespace PartyTime
             }
         }
 
+        /**
+         * This method will show an error message when the user log out
+         * and delete the name from the server.
+         * Username must be deleted from the server so the user can be logged out. 
+         * Username must be null. 
+         */
         private void logOutBtn_ServerClick(object sender, EventArgs e)
         {
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "logOut()", true);

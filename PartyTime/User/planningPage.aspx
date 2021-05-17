@@ -28,32 +28,32 @@
      <br/><br/>
 
 <span class="custom-dropdown big">
-Typ av fest:
+Party type:
     <asp:DropDownList ID="partyTypeDrop1" runat="server"></asp:DropDownList>
 </span>
 
 
 
 <span class="custom-dropdown big">
-Dekorationsförslag:
+Decoration suggestions:
      <asp:DropDownList ID="decorationSuggestionsDrop1" runat="server"></asp:DropDownList>
 </span>
 
 <span class="custom-dropdown big">
-Specialkost/mat:
+Special diet:
 <asp:DropDownList ID="foodTypeDrop1" runat="server"></asp:DropDownList>
 </span>
 <br />
 <span class="custom big">
-    Antalet gäster:
+    Number of guests:
     <br />
     <div class="age"> 
-     <input type="number" min="0" id="childNumber" runat="server" placeholder="Antalet barn"/>
-    <input type="number" min="0" id="adulNumber" runat="server" placeholder="Antalet vuxna"/>       
+     <input type="number" min="0" id="childNumber" runat="server" placeholder="Number of children"/>
+    <input type="number" min="0" id="adulNumber" runat="server" placeholder="Number of adults"/>       
     </div>
  </span>
         <br />
-         <button class="btn" runat="server" id="doneBtn">Klar</button>
+         <button class="btn" runat="server" id="doneBtn">Done</button>
               </div>
        </center>
         </div>
