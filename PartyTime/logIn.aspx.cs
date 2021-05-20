@@ -53,6 +53,7 @@ namespace PartyTime
                 else
                 {
                     //if you login and you're admin.
+                    Response.Redirect("~/Admin/Administration.aspx");
                 }
             }
             else if (both == "")
