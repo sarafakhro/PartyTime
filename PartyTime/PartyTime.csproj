@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="Admin\Administration.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Administration.aspx.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administration.aspx.designer.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminPanel.Master.cs">
       <DependentUpon>AdminPanel.Master</DependentUpon>
