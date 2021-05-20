@@ -125,6 +125,13 @@
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminPanel.Master.cs">
+      <DependentUpon>AdminPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPanel.Master.designer.cs">
+      <DependentUpon>AdminPanel.Master</DependentUpon>
+    </Compile>
     <Compile Include="Database\connectionString.cs" />
     <Compile Include="Database\Helpers.cs" />
     <Compile Include="ForgotPassword.aspx.cs">
@@ -193,6 +200,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\AdminPanel.Master" />
     <None Include="packages.config" />
     <Content Include="User\UserPanel.Master" />
     <None Include="Web.Debug.config">
