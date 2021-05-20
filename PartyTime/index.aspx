@@ -131,9 +131,9 @@
                 <div class="container">
                      <div class="text-bg relative">
                         <h1>Party Time<br>
-                            <span class="Perfect">Det perfekta verktyget för planering</span>
+                            <span class="Perfect">The perfect tool for planning</span>
                             <br>
-                            Välkommen!
+                            Welcome!
                          </h1>
                          <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                          <ContentTemplate>
@@ -151,7 +151,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="titlepage">
-                            <h2>Planering exempel:</h2>
+                            <h2>Planning example:</h2>
                         </div>
                     </div>
                 </div>
