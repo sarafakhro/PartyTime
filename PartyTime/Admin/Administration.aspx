@@ -24,27 +24,26 @@
        <br/><br/>
 <h1>Add decor:</h1>
 <span class="custom-dropdown big">
-Dekorationsnamn:
+Name of decoration:
      <asp:DropDownList ID="decorationSuggestionsDrop" runat="server"></asp:DropDownList>
 </span>
 <span class="custom big">
-BildNamnet:
- <input type="text" id="imageName" runat="server" placeholder="Bildensnamn"/>
+Name of picture:
+ <input type="text" id="imageName" runat="server" placeholder="Name of picture"/>
 </span>
 <br />
 <span class="custom big">
-   Bilden:
+   Picture:
     <br />
     <div class="age"> 
-     <label class="control-label small" for="file_img">Produktens bild (jpg/png):</label>
+     <label class="control-label small" for="file_img">Picture (jpg/png):</label>
      <input runat="server" id="fileUploader" type="file" name="file_img">
     </div>
  </span>
         <br />
-         <button class="btn" runat="server" id="addDecotdBtn">Klar</button>
+         <button class="btn" runat="server" id="addDecotdBtn">Done</button>
          </div>
    <br />
-[12:33 PM]
 </center>
         </div>
 </asp:Content>
