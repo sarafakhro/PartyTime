@@ -78,7 +78,9 @@ namespace PartyTime.Admin
             return false;
         }
 
-        //This function will fill decorationsuggestionsDrop with data from the database. 
+        /**
+         * This function will fill decorationsuggestionsDrop with data from the database. 
+         */
         public void filldecorationSuggestionsDrop()
         {
             decorationSuggestionsDrop.DataSource = helpers.getdecorationSuggestionsDropData();

@@ -13,7 +13,7 @@ namespace PartyTime
         {
             //if there is an logged in user, logged_User get it's
             //value later, save in server
-            if(Session["logged_User"] != null)
+            if(Session["user"] != null)
             {
                 //show these buttons
                 //hide from the beginning
@@ -31,6 +31,7 @@ namespace PartyTime
                 logInBtn.Visible = true;
                 signUpBtn.Visible = true;
             }
+            //connect buttons with functions
             logInBtn.ServerClick += logInBtn_ServerClick;
             signUpBtn.ServerClick += signUpBtn_ServerClick;
             logOutBtn.ServerClick += logOutBtn_ServerClick;
@@ -49,11 +50,17 @@ namespace PartyTime
             Session.Abandon();
         }
 
+        /**
+         * Redirect the user to Sign up page.
+         */
         private void signUpBtn_ServerClick(object sender, EventArgs e)
         {
             Response.Redirect("signUp.aspx");
         }
 
+        /**
+         * Redirect the user to Log in page.
+         */
         private void logInBtn_ServerClick(object sender, EventArgs e)
         {
             Response.Redirect("logIn.aspx");
