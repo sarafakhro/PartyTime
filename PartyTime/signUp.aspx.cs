@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace PartyTime
 {
@@ -79,9 +75,23 @@ namespace PartyTime
                     con.Close(); // Close the connection to the database.
                     Session["user"] = userName.Value.ToString(); // Saving username into the servere as a session called ["user"].
                     clear(); //Clear the fields.
-                    Response.Redirect("logIn.aspx"); //Redirect to this site.
+                    done_Lbl.Text = "Kontot har skapats!";
+                    disableFields();
+                    signUpBtm.Visible = false;
+                    alr_Account.Visible = false;
+                    logIn_btn.Visible = true;
                 }
             }
+        }
+
+        /**
+         * This function wil disable som fields.
+         */
+        private void disableFields()
+        {
+            userName.Disabled = true;
+            email.Disabled = true;
+            pass.Disabled = true;
         }
 
         /**
