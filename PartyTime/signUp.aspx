@@ -91,10 +91,12 @@
                             </div>
                            
                             <div class="col-sm-12">
-                                  <button class="send"><a href="LogIn.aspx">You alredy have an account? Login!</a></button>
+                                  <button runat="server" id="alr_Account" class="send"><a href="LogIn.aspx">You alredy have an account? Login!</a></button>
                               </div>
                             <div class="col-sm-12">
                                 <button runat="server" id="signUpBtm" class="send">Create an account</button>
+                                 <button runat="server" id="logIn_btn" visible="false" class="send">Log in</button>
+                                <asp:Label ID="done_Lbl" runat="server"></asp:Label>
                             </div>
                          </div>
                     </form>

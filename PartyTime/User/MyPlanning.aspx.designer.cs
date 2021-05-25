@@ -24,21 +24,21 @@ namespace PartyTime.User
         protected global::System.Web.UI.WebControls.GridView userParamGridView;
 
         /// <summary>
-        /// generatedGridView control.
+        /// ReportViewer1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView generatedGridView;
+        protected global::Microsoft.Reporting.WebForms.ReportViewer ReportViewer1;
 
         /// <summary>
-        /// exportBtn control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton exportBtn;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }
