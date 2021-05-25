@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using PartyTime.Database;
+using System;
 using System.Net.Mail;
 using System.Web.UI;
 
@@ -8,6 +7,8 @@ namespace PartyTime
 {
     public partial class ContactUs : System.Web.UI.Page
     {
+        private Helpers helpers;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //if there is a user
@@ -29,8 +30,8 @@ namespace PartyTime
             }
             logInBtn.ServerClick += logInBtn_ServerClick;
             signUpBtn.ServerClick += signUpBtn_ServerClick;
-            logOutBtn.ServerClick += LogOutBtn_ServerClick;
-            dashBtn.ServerClick += DashBtn_ServerClick;
+            logOutBtn.ServerClick += logOutBtn_ServerClick;
+            dashBtn.ServerClick += dashBtn_ServerClick;
             send_btn.ServerClick += Send_btn_ServerClick;
         }
 
@@ -64,14 +65,26 @@ namespace PartyTime
         }
 
         /**
-         * Check if inlogged user admin or user and redirect to the right panel!
+         * Check if inlogged user admin or user and redirect to the right panel.
+         * When user click on the button "panel" - only when user is inlogged.
          */
-        private void DashBtn_ServerClick(object sender, EventArgs e)
+        private void dashBtn_ServerClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //Check if inlogged user admin or user and redirect to the right panel
+            helpers = new Helpers();
+            if (helpers.checkUserType())
+            {
+                //The logged user is not admin
+                Response.Redirect("~/User/PlanningPage.aspx");
+            }
+            else
+            {
+                //The logged user is admin
+                Response.Redirect("~/Admin/Administration.aspx");
+            }
         }
 
-        private void LogOutBtn_ServerClick(object sender, EventArgs e)
+        private void logOutBtn_ServerClick(object sender, EventArgs e)
         {
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "logOut()", true);
             Session.Abandon();

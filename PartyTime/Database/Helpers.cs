@@ -14,8 +14,9 @@ namespace PartyTime.Database
         private SqlDataAdapter sda;
         private DataTable dt;
 
-
-        //This function will check if logged user is admin or not
+        /**
+         * This function will check if logged user is admin or not
+         */
         public bool checkUserType()
         {
             bool user = false;
@@ -41,8 +42,9 @@ namespace PartyTime.Database
             return user;
         }
 
-
-        //This function will get party type name from the database.
+        /**
+         * This function will get party type name from the database.
+         */
         public DataTable getPartyDropData()
         {
             sql = new SqlConnection(connectionString.con);
@@ -54,7 +56,9 @@ namespace PartyTime.Database
             return dt;
         }
 
-        //This function will get decoration suggestions name from the database.
+        /**
+         * This function will get decoration suggestions name from the database.
+         */
         public DataTable getdecorationSuggestionsDropData()
         {
             sql = new SqlConnection(connectionString.con);
@@ -66,7 +70,9 @@ namespace PartyTime.Database
             return dt;
         }
 
-        //This function will get food type from the database.
+        /**
+         * This function will get food type from the database.
+         */
         public DataTable getFoodTypeDropData()
         {
             sql = new SqlConnection(connectionString.con);
