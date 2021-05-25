@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using PartyTime.Database;
+using System;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace PartyTime
 {
     public partial class AboutUs : System.Web.UI.Page
     {
+        private Helpers helpers;
         protected void Page_Load(object sender, EventArgs e)
         {
             //if there is an logged in user, logged_User get it's
@@ -38,9 +36,24 @@ namespace PartyTime
             dashBtn.ServerClick += dashBtn_ServerClick;
         }
 
+        /**
+         * Check if inlogged user admin or user and redirect to the right panel!
+         * When user click on the button "panel" - only when user is inlogged.
+         */
         private void dashBtn_ServerClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //Check if inlogged user admin or user and redirect to the right panel
+            helpers = new Helpers();
+            if (helpers.checkUserType())
+            {
+                //The logged user is not admin
+                Response.Redirect("~/User/PlanningPage.aspx");
+            }
+            else
+            {
+                //The logged user is admin
+                Response.Redirect("~/Admin/Administration.aspx");
+            }
         }
 
         private void logOutBtn_ServerClick(object sender, EventArgs e)
