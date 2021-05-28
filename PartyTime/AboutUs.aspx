@@ -140,7 +140,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="abouttitlepage">
-                        <h2>Om oss</h2>
+                        <h2>About us</h2>
                     </div>
                 </div>
             </div>
@@ -153,16 +153,16 @@
             <div class="row">
                  <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>Vem är vi?</h2>
+                        <h2>Who are we?</h2>
                             <span>
-                                Vi är tre passionerade studenter som studerar på Malmö universitet. Vi startade år 2021 med ett projekt i syfte med att utveckla en webbsida som erbjuder ett planeringsverktyg för dig som vill anordna en fest och till företag som är i behov av att få hjälp med att planera en konferens. Vår gör vår idé till verklighet!
+                               We are three students at Malmo university. We study system development and programming and developing systems are our passions. We started year 2021 with a project to develop a website to help you plan a party or an event and help business companies to plan an event. We make our idea to become real!
                              </span>
                      </div>
                     <div class="titlepage">
                         <h2>
-                            <br />Vad är vårt mål?</h2>
-                            <span>Vårt mål är att erbjuda det bästa planeringsverktyg och underlätta planeringen för dig. Vi vet att det kan vara stressigt att anordna en fest men vi finns för att göra jobbet åt dig. Webbsidan ska vara enkel att använda och du ska enkelt kunna klicka dig fram i planeringsverktyget. Man behöver inte vara en tekniskt lagd person för att utnyttja vår tjänst då vår webbsida är anpassad för dig som är oteknisk. 
-                                <br/>Lycka till med planeringen!
+                            <br />What is our goal?</h2>
+                            <span>Our goal is to offer you the best planning tool and make planning become easy for you. We will do the hard job for you. We know that it can be stressful to arrange a party, but we are here to help you. The website is designed to make it easy for you to click forward while planning your party or event. You do not need to have skills to use our website and planning tool since the website is designed to make it easy for you. Enjoy and good luck with your planning!
+                                <br/>Sincerely team PartyTime.
                             </span>    
                     </div>
                 </div>
