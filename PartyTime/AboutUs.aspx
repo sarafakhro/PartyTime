@@ -155,14 +155,14 @@
                     <div class="titlepage">
                         <h2>Who are we?</h2>
                             <span>
-                               We are three students at Malmo university. We study system development and programming and developing systems are our passions. We started year 2021 with a project to develop a website to help you plan a party or an event and help business companies to plan an event. We make our idea to become real!
+                               This project is developed by three students who are in their first year studying System developing at Malmo university. Our task was to develop a website that can help people plan their parties, wedding, conferences and many more events. We are glad that we have made this project come to life. 
                              </span>
                      </div>
                     <div class="titlepage">
                         <h2>
                             <br />What is our goal?</h2>
-                            <span>Our goal is to offer you the best planning tool and make planning become easy for you. We will do the hard job for you. We know that it can be stressful to arrange a party, but we are here to help you. The website is designed to make it easy for you to click forward while planning your party or event. You do not need to have skills to use our website and planning tool since the website is designed to make it easy for you. Enjoy and good luck with your planning!
-                                <br/>Sincerely team PartyTime.
+                            <span>Our goal is to offer you the best planning tool can help them make their planning easier without stress. We will do the hard job for you. We know that it can be stressful to arrange a party, but we are here to help you. The website is designed to make it easy for you to plan for your party or event. . You do not need to be an expert to use our website. Party time is a user-friendly website which is very easy to understand both for beginners and for the experienced ones. Good luck with your planning!
+                                <br/>Sincerely PartyTime team.
                             </span>    
                     </div>
                 </div>

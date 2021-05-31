@@ -131,7 +131,7 @@
                 <div class="container">
                      <div class="text-bg relative">
                         <h1>Party Time<br>
-                            <span class="Perfect">The perfect tool for planning</span>
+                            <span class="Perfect">The perfect tool for planning your event</span>
                             <br>
                             Welcome!
                          </h1>
