@@ -2,9 +2,11 @@
 using System;
 using System.Net.Mail;
 using System.Web.UI;
-
+  
+//Av Bojana
 namespace PartyTime
 {
+
     public partial class ContactUs : System.Web.UI.Page
     {
         private Helpers helpers;
@@ -48,18 +50,23 @@ namespace PartyTime
             }
             else
             {
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-                //e-mailaddress and password for partytime
-                smtp.Credentials = new System.Net.NetworkCredential("partytimemau21@gmail.com", "Party2021");
-                smtp.EnableSsl = true;
-                MailMessage msg = new MailMessage();
+                string from = "partytimemau21@gmail.com";
+                MailMessage msg = new MailMessage(from, from);
                 msg.Subject = "Meddelande från en Användare!";
-                msg.Body = " Meddelande från:" + "\n" + name.Value + "\n\nPhone: " + "\n" + phone.Value + "\n\nE-post: " + "\n" + email.Value + "\n" + " \n " +
+                msg.Body = " Meddelande från:" + "\n" + name.Value + "\n\nE-post: " + "\n" + email.Value + "\n" + " \n " +
                    "Meddelande:" + "\n" + message.Value + "\n\n";
-                msg.From = new MailAddress(email.Value);
-                msg.To.Add("partytimemau21@gmail.com"); // Party Time e-post som ska få meddelandena
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "Popup", "sendMessage()", true);
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+                smtp.UseDefaultCredentials = false;
+                smtp.EnableSsl = true;
+                smtp.Credentials = new System.Net.NetworkCredential()
+                {
+                    // Email och lösenord för party time
+                    UserName = "partytimemau21@gmail.com",
+                    Password = "Xsscq9Z*##$(}*W"
+                };
+
                 smtp.Send(msg);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Popup", "sendMessage()", true);
                 clear();
             }
         }
