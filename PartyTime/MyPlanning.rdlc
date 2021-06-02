@@ -360,7 +360,7 @@
                       <CellContents>
                         <Image Name="Image2">
                           <Source>Database</Source>
-                          <Value>=First(Fields!DecorImage.Value, "DataSet1")</Value>
+                          <Value>=Fields!DecorImage.Value</Value>
                           <MIMEType>image/jpeg</MIMEType>
                           <Sizing>Fit</Sizing>
                           <Style>
@@ -369,6 +369,7 @@
                             </Border>
                           </Style>
                         </Image>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>

@@ -65,7 +65,7 @@ function usernameExist() {
 function doneInput() {
     Swal.fire({
         icon: 'info',
-        title: 'Done!',
+        title: 'Done',
         text: 'Your parameters has been saved, we are generating suggestions for you.\nYou can find them att my planning page!',
         footer: '<a href="myPlanning.aspx">My planning</a>'
     })
